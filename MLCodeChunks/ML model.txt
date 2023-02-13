@@ -1,0 +1,5 @@
+1. import the data from the csv
+2. preprocess the data
+3. Vectorized the data
+4. train each ML Model separately for each trait
+5. Test the accuracy of the model test set
