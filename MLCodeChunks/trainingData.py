@@ -1,6 +1,5 @@
 import csv
 
-
 class TrainingData:
     sentences = []
     extraversion = []
@@ -32,9 +31,9 @@ class TrainingData:
 
 
 
-
-Tr = TrainingData()
-Tr.importToModel()
-print(len(Tr.sentences))
-print(len(Tr.extraversion))
+#
+# Tr = TrainingData()
+# Tr.importToModel()
+# print(len(Tr.sentences))
+# print(len(Tr.extraversion))
 

@@ -1,4 +1,5 @@
 import nltk
+nltk.download('omw-1.4')
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -40,9 +41,9 @@ class TextPreprocessor:
 
 
 
-Tr = TrainingData()
-Tr.importToModel()
-
-sentences = np.array(Tr.sentences)
-prepro = TextPreprocessor()
-print(prepro.feedPreprocessorAnArray(sentences))
+# Tr = TrainingData()
+# Tr.importToModel()
+#
+# sentences = np.array(Tr.sentences)
+# prepro = TextPreprocessor()
+# print(prepro.feedPreprocessorAnArray(sentences))
