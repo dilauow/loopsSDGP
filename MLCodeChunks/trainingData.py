@@ -2,11 +2,17 @@ import csv
 
 class TrainingData:
     sentences = []
+    openness =[]
+    consciensiosness = []
     extraversion = []
+    agreebleness =[]
+    nurotisicm = []
+
+
     def exportToCSV(self):
 
         # Open the .txt file for reading
-        with open('exTraitNeg.txt', 'r') as file:
+        with open('aTrait.txt', 'r') as file:
             lines = file.readlines()
 
         with open('oceanTraits.csv', 'a', newline='') as file:
@@ -18,7 +24,7 @@ class TrainingData:
 
             # Write the contents of the list of lines to the .csv file, with a value of 0 in the second column
             for line in lines:
-                writer.writerow([line.strip(), 0,0,-1,0,0])
+                writer.writerow([line.strip(), 0,0,0,1,0])
 
     def importToModel(self):
 
@@ -27,12 +33,16 @@ class TrainingData:
             next(reader)  # Skip the header row
             for row in reader:
                 self.sentences.append(row[0])
+                self.openness.append(int(row[1]))
+                self.consciensiosness.append(int(row[2]))
                 self.extraversion.append(int(row[3]))
-
+                self.agreebleness.append(int(row[4]))
+                self.agreebleness.append(int(row[5]))
 
 
 #
-# Tr = TrainingData()
+Tr = TrainingData()
+Tr.exportToCSV()
 # Tr.importToModel()
 # print(len(Tr.sentences))
 # print(len(Tr.extraversion))
