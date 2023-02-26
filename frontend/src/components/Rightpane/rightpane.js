@@ -3,6 +3,6 @@ import "./rightpane.css"
 
 export default function rightpane() {
   return (
-    <div>rightpane</div>
+    <div className='RightpaneBox'>rightpane</div>
   )
 }
