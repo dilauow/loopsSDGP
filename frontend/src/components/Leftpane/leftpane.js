@@ -1,5 +1,10 @@
 import React from 'react'
 import "./leftpane.css"
+import DisplaySettingsIcon from '@mui/icons-material/DisplaySettings';
+import WorkIcon from '@mui/icons-material/Work';
+import BorderAllIcon from '@mui/icons-material/BorderAll';
+import PublicIcon from '@mui/icons-material/Public';
+import PaidIcon from '@mui/icons-material/Paid';
 
 export default function leftpane() {
   return (
