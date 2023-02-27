@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../../components/Navigation/NavBar'
-import Leftpane from '../../components/Leftpane/Leftpane'
-import Rightpane from '../../components/Rightpane/Rightpane'
+import Leftpane from '../../components/Leftpane/leftpane'
+import Rightpane from '../../components/Rightpane/rightpane'
 import "./home.css"
 
 
