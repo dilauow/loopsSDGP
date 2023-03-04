@@ -1,4 +1,39 @@
-.RightpaneBox{
-    background-color: green;
-    flex: 8;
+.RightpaneBox {
+  margin: 20px;
+  background-color: green;
+  flex: 8;
+}
+
+.job-card-container {
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card {
+  background: pink;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+}
+
+.job-card-first-col {
+  background: blue;
+  margin: 5px;
+  display: flex;
+}
+
+.job-card-second-col {
+  background: blue;
+  margin: 5px;
+}
+
+.job-card-icon {
+  background: black;
+}
+
+.job-card-title-company-name {
+  background: white;
 }
