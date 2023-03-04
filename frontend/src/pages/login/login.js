@@ -11,6 +11,7 @@ export default function login() {
         <input type="text" name="Uname" id="Uname" placeholder='Username'></input>
         <br></br>
         <label><b>Password</b></label>
+        <br></br>
         <input type="Password" name="Pass" id="Pass" placeholder='Pass'></input>
         <br></br>
         <input type="checkbox" id='check'></input>
