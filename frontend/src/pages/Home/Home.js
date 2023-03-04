@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../../components/Navigation/NavBar";
 import Leftpane from "../../components/Leftpane/leftpane";
-import Rightpane from "../../components/Rightpane/rightpane";
+import Rightpane from "../../components/Rightpane/Rightpane";
 import "./home.css";
 import Footer from "../../components/Footer/Footer";
 

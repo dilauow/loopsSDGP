@@ -1,6 +1,8 @@
 import React from "react";
 import "./rightpane.css";
 
-export default function rightpane() {
+function Rightpane() {
   return <div className="RightpaneBox">rightpane</div>;
 }
+
+export default Rightpane;
