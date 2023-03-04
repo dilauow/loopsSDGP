@@ -2,6 +2,7 @@
   margin: 20px;
   background-color: green;
   flex: 8;
+  border-radius: 5px;
 }
 
 .job-card-container {
@@ -10,19 +11,30 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
 }
 
-.job-card {
+.job-card-first-row {
   background: pink;
   margin: 5px;
   padding: 10px;
   display: flex;
+  justify-content: space-around;
+}
+
+.job-card-second-row {
+  background: pink;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .job-card-first-col {
   background: blue;
   margin: 5px;
   display: flex;
+  border-radius: 15px;
 }
 
 .job-card-second-col {
@@ -36,4 +48,5 @@
 
 .job-card-title-company-name {
   background: white;
+  padding: 10px;
 }
