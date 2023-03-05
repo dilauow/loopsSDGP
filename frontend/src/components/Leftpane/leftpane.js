@@ -67,13 +67,13 @@ export default function leftpane() {
           <span className='leftPaneMenuText'>Salary</span>
         </li>
         <li className="leftPainMenuItem">
-          <span>Currency</span>
+          <span className='moneyitem'>Currency</span>
         </li>
         <li className="leftPainMenuItem">
           <input placeholder='Currency' className="searchInput" />
         </li>
         <li className="leftPainMenuItem">
-          <span>Paid Every</span>
+          <span className='moneyitem'>Paid Every</span>
         </li>
         <li className="leftPainMenuItem">
           <input placeholder='Type Here' className="searchInput" />

@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    color: black;
 }
 
 .leftPaneMenuIcon{
@@ -39,4 +40,13 @@
     display: flex;
     align-items: center;
     margin-right: 10px;
+    color: black;
+}
+
+.leftPaneMenuText{
+    color: black;
+}
+
+.moneyitem{
+    color: black;
 }
