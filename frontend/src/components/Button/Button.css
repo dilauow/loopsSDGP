@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap");
+
+.button {
+  margin: 6px 0px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 28px;
+  /* border: 3px white solid; */
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.primaryBtn {
+  background-color: #5c6dff;
+  /* padding: 12px 24px; */
+  border-radius: 6px;
+  color: white;
+  font-weight: 900px;
+  letter-spacing: 0.18rem;
+}
+
+.primaryBtn:hover {
+  transform: scale(1.1);
+}

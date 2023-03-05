@@ -10,6 +10,12 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+.job-card {
+  margin: 5px;
+  margin-bottom: 20px;
+  border: black solid;
+}
+
 .job-card-container {
   background-color: aliceblue;
   margin: 20px;
@@ -45,6 +51,7 @@
 .job-card-second-col {
   background: blue;
   margin: 5px;
+  padding: 8px;
 }
 
 .job-card-icon {
