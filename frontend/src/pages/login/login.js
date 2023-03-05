@@ -13,12 +13,18 @@ export default function login() {
         <br></br>
         <label><b>Password</b></label>
         <br></br>
-        <input type="Password" name="Pass" id="Pass" placeholder='Pass'></input>
+        <input type="Password" name="Pass" id="Pass" placeholder='Password'></input>
         <br></br>
         <input type="checkbox" id='check'></input>
         <span>Remember me</span>
         <br></br>
-        Forgot <a href='#contained'>Password</a>
+        <br></br>
+        <button>Forget Password</button>
+        <br></br>
+        <br></br>
+        <span className='Registertxt'>If you are not a member, Click Register.</span>
+        <br></br>
+        <button>Register</button>
       </form>
     </div>
   </div>
