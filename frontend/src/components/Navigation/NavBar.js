@@ -25,7 +25,7 @@ export default function NavBar() {
                 <Stack direction="row" spacing={2}>
                     <Button className='bt1' variant='PostaJob' href='#contained-buttons'>+ Post a job</Button>
                     <Button className='bt2' variant='Candidate' onClick={handleclick}>Candidate Sign-in</Button>
-                    <Button className='bt3' variant='Employer' href='#contained-buttons'>Employer Sign-in</Button>
+                    <Button className='bt3' variant='Employer' onClick={handleclick}>Employer Sign-in</Button>
                 </Stack>
             </div>
         </div>
