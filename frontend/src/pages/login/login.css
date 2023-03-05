@@ -4,7 +4,7 @@
     margin: auto;
     margin: 20 0 0 450px;
     padding: 80px;
-    background: #23463f;
+    background: #1c6355;
     border-radius: 15px ;
 
 }
@@ -58,4 +58,8 @@ a{
 
 .Registertxt{
     font-size: 12px;
+}
+
+body{
+    background-color: #d4ebf2;
 }

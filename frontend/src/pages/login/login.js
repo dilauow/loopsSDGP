@@ -3,7 +3,7 @@ import "./login.css"
 
 export default function login() {
   return (
-    <div>loginpage
+    <div className='lgpage'>
     <h2>Login Page</h2>
     <br></br>
     <div className='login'>
