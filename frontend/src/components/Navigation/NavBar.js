@@ -11,7 +11,13 @@ export default function NavBar() {
     function handleclick(){
         navigate("/loginpage")
     }
-    
+
+    const navigate2 = useNavigate();
+
+    function handleclick2(){
+        navigate2("/home")
+    }
+
   return (
     <div className="navBarBox">
         <div className="navBarLeft">
@@ -23,8 +29,8 @@ export default function NavBar() {
         <div className="navBarRight">
             <div className="navBarLinks">
                 <Stack direction="row" spacing={3}>
-                    <Button className='bt2' variant='Candidate' onClick={handleclick}>Candidate Sign-in</Button>
-                    <Button className='bt3' variant='Employer' onClick={handleclick}>Employer Sign-in</Button>
+                    <Button className='bt2' variant='Candidate' onClick={handleclick}>Admin Sign-in</Button>
+                    <Button className='bt3' variant='Employer' onClick={handleclick2}>Post a Job</Button>
                 </Stack>
             </div>
         </div>
