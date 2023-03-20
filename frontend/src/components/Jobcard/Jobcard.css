@@ -52,3 +52,17 @@
   margin-right: 5px;
   margin-left: 5px;
 }
+
+.primaryBtn {
+  background-color: #5c6dff;
+  font-size: x-large;
+  /* padding: 12px 24px; */
+  border-radius: 6px;
+  color: white;
+  font-weight: 900px;
+  letter-spacing: 0.18rem;
+}
+
+.primaryBtn:hover {
+  transform: scale(1.1);
+}

@@ -6,6 +6,7 @@ import { HiOutlineComputerDesktop } from "react-icons/hi2";
 import { TfiLocationPin } from "react-icons/tfi";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 function Jobcard() {
   /* This part use for fetch data*/
@@ -43,6 +44,12 @@ function Jobcard() {
       jobsalary: 500000,
     },
   ];
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/formpage");
+  }
   return (
     <div>
       {data.map((jobs) => (
@@ -61,7 +68,14 @@ function Jobcard() {
               </div>
             </div>
             <div className="job-card-second-col">
-              <Button type={BUTTON_TYPES.PRIMARY} btnText="Apply" />
+              {/* <Button
+                onClick={handleClick}
+                type={BUTTON_TYPES.PRIMARY}
+                btnText="Apply"
+              /> */}
+              <button className="primaryBtn" onClick={handleClick}>
+                APPLY
+              </button>
             </div>
           </div>
           <div className="job-card-second-row">
