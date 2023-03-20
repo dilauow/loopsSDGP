@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&family=Roboto:wght@300&family=Ubuntu:wght@300;400&display=swap");
+
+/* * */
+.job-card {
+  margin: 5px;
+  margin-bottom: 20px;
+  border: black solid;
+}
+
+/* * */
+.job-card-first-row {
+  background: pink;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+/* * */
+.job-card-second-row {
+  background: pink;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+/* * */
+.job-card-first-col {
+  background: blue;
+  margin: 5px;
+  display: flex;
+  border-radius: 15px;
+}
+/* * */
+.job-card-second-col {
+  background: blue;
+  margin: 5px;
+  padding: 8px;
+}
+
+/* * */
+.job-card-title-company-name {
+  background: white;
+  padding: 10px;
+}
+/* * */
+.job-card-title-company-name h3 {
+  padding-top: 12px;
+}
+
+/* * */
+.h-icons {
+  margin-right: 5px;
+  margin-left: 5px;
+}
