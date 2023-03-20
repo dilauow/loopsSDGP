@@ -12,7 +12,6 @@ import Jobcard from "../Jobcard/Jobcard";
 function Rightpane() {
   return (
     <div className="RightpaneBox">
-      RP
       <div className="job-card-container">
         JB-CON
         <Jobcard />

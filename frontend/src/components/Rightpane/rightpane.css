@@ -2,7 +2,7 @@
 
 .RightpaneBox {
   margin: 20px;
-  background-color: green;
+  background-color: rgb(245, 254, 255);
   flex: 8;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;

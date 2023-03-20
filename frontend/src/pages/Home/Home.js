@@ -10,7 +10,6 @@ export default function Home() {
     <>
       <NavBar />
       <div className="bottomcontainer">
-        <Leftpane />
         <Rightpane />
       </div>
       <div>

@@ -4,7 +4,7 @@ import "./login.css";
 export default function login() {
   return (
     <div className="lgpage">
-      <h2>Login Page</h2>
+      <h2>LOG-IN</h2>
       <br></br>
       <div className="login">
         <form id="login" method="get" action="login.php">

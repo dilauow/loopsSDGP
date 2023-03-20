@@ -19,7 +19,7 @@
 }
 
 .navBarCenter{
-    flex: 5;
+    flex: 11;
 }
 
 .navBarRight{
@@ -31,4 +31,9 @@
     margin-left: 10px;
     font-weight: bold;
     color: black;
+}
+
+.navBarLinks{
+    display: flex;
+    align-items: center;
 }
