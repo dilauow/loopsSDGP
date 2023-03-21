@@ -47,7 +47,8 @@ function Jobcard() {
 
   const navigate = useNavigate();
 
-  function handleClick() {
+  function handleClick(jobtitle) {
+    console.log(jobtitle);
     navigate("/formpage");
   }
 
@@ -80,7 +81,10 @@ function Jobcard() {
                 type={BUTTON_TYPES.PRIMARY}
                 btnText="Apply"
               /> */}
-              <button className="primaryBtn" onClick={handleClick}>
+              <button
+                className="primaryBtn"
+                onClick={() => handleClick(jobs.jobtitle)}
+              >
                 APPLY
               </button>
               <button className="primarytBtn" onClick={handleClick2}>
