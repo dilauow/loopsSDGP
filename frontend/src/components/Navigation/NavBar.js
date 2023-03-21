@@ -15,7 +15,7 @@ export default function NavBar() {
     const navigate2 = useNavigate();
 
     function handleclick2(){
-        navigate2("/loginpage")
+        navigate2("/preview")
     }
 
   return (
