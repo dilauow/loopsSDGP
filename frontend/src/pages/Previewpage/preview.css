@@ -1,3 +1,29 @@
 .mainbody{
 	background: radial-gradient(#fff,#add8e6);
 }
+
+.head{
+    text-align: center;
+    align-items: center;
+    text-shadow: 25px;
+}
+
+.head1{
+    text-align: center;
+    align-items: center;
+}
+
+.head2{
+    text-align: center;
+    align-items: center;
+}
+
+.head3{
+    text-align: center;
+    align-items:center ;
+}
+
+.head4{
+    text-align: center;
+    align-items: left ;
+}
