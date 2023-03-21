@@ -27,3 +27,14 @@
     text-align: center;
     align-items: left ;
 }
+
+.table {
+    text-align: center;
+    height: 10px;
+    width: 1000px;
+}
+
+.details {
+    height: 10px;
+    width: 1000px;
+}
