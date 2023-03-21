@@ -46,7 +46,7 @@ function Form() {
         <h1>Apply for Job !</h1>
         <form onSubmit={handleSubmit}>
           <div className="details-div div">
-            <label> Full Name :</label>
+            <label> Full Nammmme :</label>
             <input
               type="text"
               name="fullname"

@@ -7,6 +7,7 @@
 
 .div {
   border: white 2px solid;
+  color: aqua;
   margin-bottom: 20px;
   padding: 10px;
   display: flex;
