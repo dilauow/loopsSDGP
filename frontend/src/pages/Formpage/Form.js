@@ -45,7 +45,7 @@ function Form() {
       <div className="formdiv">
         <h1>Apply for Job !</h1>
         <form onSubmit={handleSubmit}>
-          <div className="details-div div">
+          <div className="details-div color">
             <label> Full Nammmme :</label>
             <input
               type="text"
@@ -75,7 +75,7 @@ function Form() {
               onChange={handleChange}
             />
           </div>
-          <div className="ques-div div">
+          <div className="ques-div color">
             <label>Question 1 : </label>
             <textarea
               name="question1"

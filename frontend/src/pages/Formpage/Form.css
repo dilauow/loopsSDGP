@@ -5,8 +5,9 @@
   padding: 20px;
 }
 
-.div {
+.color {
   border: white 2px solid;
+  background-color: white;
   color: aqua;
   margin-bottom: 20px;
   padding: 10px;
