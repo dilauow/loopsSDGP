@@ -9,7 +9,7 @@ export default function NavBar() {
     const navigate = useNavigate();
 
     function handleclick(){
-        navigate("/login")
+        navigate("/loginpage")
     }
 
     const navigate2 = useNavigate();

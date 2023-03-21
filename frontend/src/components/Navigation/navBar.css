@@ -19,7 +19,7 @@
 }
 
 .navBarCenter{
-    flex: 11;
+    flex: 9;
 }
 
 .navBarRight{
@@ -36,14 +36,7 @@
 .navBarLinks{
     flex: auto;
     align-items: center;
-    border: 2px solid #000000;
     cursor: pointer;
-    border-radius: 25px;
-    font-weight: bold;
-    position: relative;
     overflow: hidden;
 }
 
-.navBarLinks:hover{
-    background-color: #acfff7;
-}
