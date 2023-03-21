@@ -4,3 +4,11 @@
   margin: 50px;
   padding: 20px;
 }
+
+.div {
+  border: white 2px solid;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
