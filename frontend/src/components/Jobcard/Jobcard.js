@@ -50,6 +50,13 @@ function Jobcard() {
   function handleClick() {
     navigate("/formpage");
   }
+
+  const navigate2 = useNavigate();
+
+  function handleClick2() {
+    navigate2("/preview");
+  }
+
   return (
     <div>
       {data.map((jobs) => (
@@ -75,6 +82,9 @@ function Jobcard() {
               /> */}
               <button className="primaryBtn" onClick={handleClick}>
                 APPLY
+              </button>
+              <button className="primarytBtn" onClick={handleClick2}>
+                RESULTS
               </button>
             </div>
           </div>
