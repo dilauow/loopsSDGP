@@ -1,8 +1,10 @@
-import React from 'react'
-import"./signup.css";
-export default function Signup() {
-  return (
-    <Components.Container>
+import React from "react";
+import * as Components from './Components';
+
+function Login() {
+    const [signIn, toggle] = React.useState(true);
+     return(
+         <Components.Container>
              <Components.SignUpContainer signinIn={signIn}>
                  <Components.Form>
                      <Components.Title>Create Account</Components.Title>
@@ -50,5 +52,7 @@ export default function Signup() {
              </Components.OverlayContainer>
 
          </Components.Container>
-  )
+     )
 }
+
+export default Login;
