@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+h1 {
+  margin-bottom: 30px;
+}
 
 .bg {
   background-image: url("signupbg.jpeg");
@@ -63,6 +66,7 @@ button[type="submit"] {
   font-weight: 600;
   cursor: pointer;
   transition: background-color .3s ease;
+  margin-bottom: 20px;
 }
 
 button[type="submit"]:hover {
