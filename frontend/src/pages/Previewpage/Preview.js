@@ -40,23 +40,23 @@ export default function Preview() {
       </table>
       <table align="center" cellpadding="10px" width="600px">
         <tr>
-          <td>1 Openness =</td>
+          <td> Openness =</td>
           <td>%</td>
         </tr>
         <tr>
-          <td>2 Conscientiousness =</td>
+          <td> Conscientiousness =</td>
           <td>%</td>
         </tr>
         <tr>
-          <td>3 Extraversion =</td>
+          <td> Extraversion =</td>
           <td>%</td>
         </tr>
         <tr>
-          <td>4 Agreeableness =</td>
+          <td> Agreeableness =</td>
           <td>%</td>
         </tr>
         <tr>
-          <td>5 Neuroticism =</td>
+          <td> Neuroticism =</td>
           <td>%</td>
         </tr>
       </table>
