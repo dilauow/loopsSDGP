@@ -1,48 +1,46 @@
-import React from "react";
-import "./login.css";
+import React, { useState } from 'react';
+import './login.css';
 
-export default function login() {
+function Login() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Here you can add the code to submit the form data to your backend API
+  };
+
   return (
-    <div className="lgpage">
-      <h2>LOG-IN</h2>
-      <br></br>
-      <div className="login">
-        <form id="login" method="get" action="login.php">
-          <label>
-            <b>User Name</b>
-          </label>
-          <input
-            type="text"
-            name="Uname"
-            id="Uname"
-            placeholder="Username"
-          ></input>
-          <br></br>
-          <label>
-            <b>Password</b>
-          </label>
-          <br></br>
-          <input
-            type="Password"
-            name="Pass"
-            id="Pass"
-            placeholder="Password"
-          ></input>
-          <br></br>
-          <input type="checkbox" id="check"></input>
-          <span>Remember me</span>
-          <br></br>
-          <br></br>
-          <button>Forget Password</button>
-          <br></br>
-          <br></br>
-          <span className="Registertxt">
-            If you are not a member, Click Register.
-          </span>
-          <br></br>
-          <button>Register</button>
-        </form>
-      </div>
+    <div className='bg'>
+      <form className='form1' onSubmit={handleSubmit}>
+        <h1 className='h1'>LogIn to Hire Vision</h1>
+        <div>
+          
+          <input className='inputlogin'
+            type="email"
+            id="email"
+            placeholder='Email'
+            value={email}
+            onChange={(event) => setEmail(event.target.value)}
+          />
+        </div>
+        <div>
+
+          <input className='inputlogin'
+            type="password"
+            id="password"
+            placeholder='Password'
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+          />
+        </div>
+    
+        <button className='buttonsignup' type="submit">Log-In</button>
+      </form>
     </div>
   );
 }
+
+export default Login;

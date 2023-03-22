@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Signup.css';
+import './signup.css';
+import { useNavigate } from 'react-router-dom';
 
 function Signup() {
   const [name, setName] = useState('');
@@ -11,6 +12,12 @@ function Signup() {
     event.preventDefault();
     // Here you can add the code to submit the form data to your backend API
   };
+
+  const navigate = useNavigate();
+
+    function handleclick(){
+        navigate("/loginpage")
+    }
 
   return (
     <div className='bg'>
@@ -57,6 +64,7 @@ function Signup() {
           />
         </div>
         <button type="submit">Sign Up</button>
+        <button className='loginb' onClick={handleclick}>Log In</button>
       </form>
     </div>
   );

@@ -9,7 +9,7 @@ export default function NavBar() {
     const navigate = useNavigate();
 
     function handleclick(){
-        navigate("/loginpage")
+        navigate("/signup")
     }
 
     const navigate2 = useNavigate();
@@ -30,7 +30,6 @@ export default function NavBar() {
             <div className="navBarLinks">
                 <Stack direction="row" spacing={3}>
                     <Button className='bt2' variant='Candidate' onClick={handleclick}>Admin Sign-in</Button>
-                    <Button className='bt3' variant='Employer'onClick={handleclick2}>Post a Job</Button>
                 </Stack>
             </div>
         </div>

@@ -61,7 +61,7 @@ button[type="submit"] {
   border: 0;
   border-radius: 24px;
   padding: 10px 16px;
-  margin-top: 50px;
+  margin-top: 40px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -74,6 +74,22 @@ button[type="submit"]:hover {
 }
 
 input:focus {
+  outline: none;
+  border: 2px solid #005ce6;
+}
+
+.loginb{
+  border-radius: 25px;
+  background-color: #1e375b;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 16px;
+  margin-top: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.loginb:focus{
   outline: none;
   border: 2px solid #005ce6;
 }
