@@ -1,41 +1,51 @@
 .mainbody {
+    margin: 50px auto;
+    width: 700px;
     font-family: Arial, sans-serif;
   }
   
-  .title {
-    font-size: 32px;
+  .center {
     text-align: center;
   }
   
-  .divider {
-    width: 600px;
-  }
-  
-  .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   
   .col-3 {
+    float: left;
     width: 33.33%;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
   }
   
   .fa-quote-left {
-    font-size: 36px;
+    color: #666;
   }
   
   table {
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   
-  h3 {
-    margin: 0;
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
   }
   
   td {
-    padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #ddd;
+    padding: 8px;
   }
   
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd;
+  }
