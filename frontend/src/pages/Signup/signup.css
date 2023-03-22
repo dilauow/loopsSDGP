@@ -5,7 +5,8 @@
 }
 
 body {
-  background: #4c4b4d;
+  background-image: url("signupbg.jpeg");
+  opacity: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
