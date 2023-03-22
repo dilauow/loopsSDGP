@@ -87,9 +87,6 @@ function Jobcard() {
               >
                 APPLY
               </button>
-              <button className="primarytBtn" onClick={handleClick2}>
-                RESULTS
-              </button>
             </div>
           </div>
           <div className="job-card-second-row">

@@ -1,11 +1,25 @@
 import React, { useState } from 'react';
 import './login.css';
+import {getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import app from "../../firebase"
 
-function Login() {
-  const [name, setName] = useState('');
+const Login = () => {
+
+  const auth = getAuth(app);
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+
+  const signIn = (e) =>{
+    e.preventDefault();
+    signInWithEmailAndPassword(auth,email, password)
+    .then((userCredential) => {
+      console.log(userCredential);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -14,7 +28,7 @@ function Login() {
 
   return (
     <div className='bg'>
-      <form className='form1' onSubmit={handleSubmit}>
+      <form className='form1' onSubmit={signIn}>
         <h1 className='h1'>LogIn to Hire Vision</h1>
         <div>
           
@@ -23,7 +37,7 @@ function Login() {
             id="email"
             placeholder='Email'
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div>
@@ -33,7 +47,7 @@ function Login() {
             id="password"
             placeholder='Password'
             value={password}
-            onChange={(event) => setPassword(event.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
     

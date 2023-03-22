@@ -1,12 +1,28 @@
 import React, { useState } from 'react';
 import './signup.css';
 import { useNavigate } from 'react-router-dom';
+import {getAuth,createUserWithEmailAndPassword } from "firebase/auth";
+import app from "../../firebase";
 
-function Signup() {
+const Signup = () => {
+
+  const auth = getAuth(app);
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+
+  const signUp = (e) =>{
+    e.preventDefault();
+    createUserWithEmailAndPassword(auth,email, password,confirmPassword)
+    .then((userCredential) => {
+      console.log(userCredential);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -21,7 +37,7 @@ function Signup() {
 
   return (
     <div className='bg'>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={signUp}>
         <h1>SignUp to Hire Vision</h1>
         <div>
           
@@ -30,7 +46,7 @@ function Signup() {
             id="name"
             placeholder='Name'
             value={name}
-            onChange={(event) => setName(event.target.value)}
+            onChange={(e) => setName(e.target.value)}
           />
         </div>
         <div>
@@ -40,7 +56,7 @@ function Signup() {
             id="email"
             placeholder='Email'
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
         <div>
@@ -50,7 +66,7 @@ function Signup() {
             id="password"
             placeholder='Password'
             value={password}
-            onChange={(event) => setPassword(event.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div>
@@ -60,7 +76,7 @@ function Signup() {
             id="confirmPassword"
             placeholder='Confirm Password'
             value={confirmPassword}
-            onChange={(event) => setConfirmPassword(event.target.value)}
+            onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </div>
         <button type="submit">Sign Up</button>

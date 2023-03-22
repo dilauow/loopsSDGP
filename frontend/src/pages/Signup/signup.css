@@ -79,7 +79,8 @@ input:focus {
 }
 
 .loginb{
-  border-radius: 25px;
+  border-radius: 24px;
+  border: 0;
   background-color: #1e375b;
   color: #fff;
   cursor: pointer;
@@ -89,8 +90,12 @@ input:focus {
   font-weight: 600;
 }
 
+.loginb:hover{
+  background-color: #1e375b;
+}
+
 .loginb:focus{
   outline: none;
-  border: 2px solid #005ce6;
+  border: 0px solid #005ce6;
 }
 
