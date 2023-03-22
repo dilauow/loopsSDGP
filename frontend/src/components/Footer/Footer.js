@@ -1,49 +1,36 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import './Footer.css';
 
-const Footer = () => {
+function Footer() {
   return (
-    <div className="main-footer">
-      <div className="container">
-        <div className="row">
-          <div className="product-title">
-            <h2>HireVision</h2>
+    <footer className="footer">
+      <div className="footer-container">
+        
+        <h1>HireVision</h1>
+        <div className="footer-links">
+          
+          <div className='list'>
+            <ul className="footer-links-column">
+              <li>Home</li>
+              <li>Post a Job</li>
+              <li>Candidate Sign In</li>
+            </ul>
           </div>
-          <br></br>
-          <hr></hr>
-          <div className="row">
-            {/* Column01 */}
-            <div className="col">
-              <ul className="list-unstyled">
-                <h2>Quick Links</h2>
-                <br></br>
-                <li>Home</li>
-                <li>Post a job</li>
-                <li>Candidate signin</li>
-                <li>Employer signin</li>
-              </ul>
-            </div>
-            {/* Column02 */}
-            <div className="col">
-              <ul className="list-unstyled">
-                <h2>Legal</h2>
-                <br></br>
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-                <li>GDPR</li>
-              </ul>
-            </div>
-            {/* Column03 */}
+          <div className='list'>
+            <ul className="footer-links-column">
+              <li>Employer Sign In</li>
+              <li>Terms of Service</li>
+              <li>Privacy Policy</li>
+              <li>GDPR Fields</li>
+            </ul>
           </div>
         </div>
-        <div className="row">
-          <p className="col-sm">
-            &copy;{new Date().getFullYear()} HireVision | All rights reserved.
-          </p>
-        </div>
+        <p className="footer-copyright">
+          &copy;{new Date().getFullYear()} HireVision | All rights reserved.
+        </p>
       </div>
-    </div>
+    </footer>
   );
-};
+}
 
 export default Footer;
