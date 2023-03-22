@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f6f5f7;
+  background: #4c4b4d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,3 +14,62 @@ body {
   height: 100vh;
   margin: -20px 0 50px;
 }
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 1rem 0 .5rem;
+  width: 300%;
+  max-width: 300px;
+  background: #d0c7c7;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  border-radius: 24px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+button[type="submit"] {
+  background-color: #2d4a68;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  margin-top: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e375b;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #005ce6;
+}
+
