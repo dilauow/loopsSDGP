@@ -9,6 +9,9 @@ export default function Frontpage() {
   function handleclick(){
       navigate("/home")
   }
+  function handleclick2(){
+    navigate("/aboutus")
+}
 
   return (
     <>
@@ -19,7 +22,7 @@ export default function Frontpage() {
           <p>“You know you are on the road to success if you would do your job, and not be paid for it.”<br></br> - Oprah Winfrey -</p>
           <div>
             <button className='btnhome' type='button' onClick={handleclick}><span></span>Get Start</button>
-            <button className='btnhome' type='button'><span></span>About us</button>
+            <button className='btnhome' type='button' onClick={handleclick2}><span></span>About us</button>
           </div>
         </div>
       </body>

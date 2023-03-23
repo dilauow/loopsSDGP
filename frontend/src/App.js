@@ -5,6 +5,7 @@ import Home from "./pages/Home/Home";
 import Loginpage from "./pages/login/login";
 import Previewpage from "./pages/Previewpage/Preview";
 import Signup from "./pages/Signup/Signup";
+import Aboutus from "./pages/Aboutus/Aboutus";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/formpage" element={<Form />} />
         <Route path="/home" element={<Home/>}/>
         <Route path="/preview" element={<Previewpage/>}/>
+        <Route path="/aboutus" element={<Aboutus/>}/>
       </Routes>
     </div>
   );
