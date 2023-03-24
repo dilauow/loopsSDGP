@@ -10,10 +10,10 @@ const firebaseConfig = {
   projectId: "hirevision-se28-loops",
   storageBucket: "hirevision-se28-loops.appspot.com",
   messagingSenderId: "914622417964",
-  appId: "1:914622417964:web:86d2b78f20e5f92c7cd589"
+  appId: "1:914622417964:web:86d2b78f20e5f92c7cd589",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export default app
+export default app;

@@ -1,0 +1,9 @@
+.applicant-card-container {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  background-color: white;
+  margin: 20px;
+}
