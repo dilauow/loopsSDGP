@@ -1,16 +1,58 @@
 .formdiv {
-  background-color: black;
-  color: white;
+  background-color: #F3CCFF;
   margin: 50px;
   padding: 20px;
+  border-radius: 25px;
+}
+
+.formfill{
+  background-image: url(../Signup/signupbg.jpeg);
 }
 
 .color {
-  border: white 2px solid;
-  background-color: white;
   color: aqua;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+}
+
+.h1form{
+  color: black;
+  font-family: Candara;
+  font-size: 40px;
+}
+
+.labelsform{
+  color: black;
+}
+
+.btnsubmit{
+  border: none; /* Remove border */
+  color: black; /* Set text color */
+  padding: 12px 24px; /* Set padding */
+  text-align: center; /* Center align text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Set font size */
+  margin: 4px 2px; /* Set margin */
+  cursor: pointer; /* Set cursor style */
+  border-radius: 15px; /* Add rounded corners */
+  background-color: #A555EC;
+  justify-content: center;
+  margin-top: 20px; 
+  align-items: center;
+
+}
+
+
+.textareaform{
+  border-radius: 15px;
+}
+
+.textareaform1{
+  border-radius: 15px;
+  resize: both;
+  overflow: auto;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
+import HailIcon from '@mui/icons-material/Hail';
 import "./navBar.css"
 import { useNavigate } from 'react-router-dom';
 
@@ -21,8 +22,8 @@ export default function NavBar() {
   return (
     <div className="navBarBox">
         <div className="navBarLeft">
-            <span className='logo'>Hire Vision</span>
-            <PersonPinIcon className='personlogo'/>
+            <span className='logo'>HireVision</span>
+            <HailIcon className='personlogo'/>
         </div>
         <div className="navBarCenter">
         </div>

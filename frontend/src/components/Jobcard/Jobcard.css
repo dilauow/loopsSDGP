@@ -27,18 +27,11 @@
 }
 /* * */
 .job-card-first-col {
-  background: blue;
-  margin: 5px;
-  display: flex;
-  border-radius: 15px;
-  max-height: fit-content;
+  background: none;
 }
 /* * */
 .job-card-second-col {
-  background: blue;
-  margin: 5px;
-  padding: 8px;
-  border-radius: 15px;
+  background: none;
 }
 
 /* * */
@@ -58,13 +51,13 @@
 }
 
 .primaryBtn {
-  background-color: #5c6dff;
-  font-size: 18px;
+  background-color: #FFFFD0;
+  font-size: 20px;
   /* padding: 12px 24px; */
-  border-radius: 6px;
-  color: white;
-  font-weight: 900px;
-  letter-spacing: 0.18rem;
+  border-radius: 5px;
+  color: black;
+  border-color: blueviolet;
+  font-family: Calibri;
 }
 
 .primaryBtn:hover {

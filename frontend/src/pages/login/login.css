@@ -3,12 +3,13 @@
 * {
   box-sizing: border-box;
 }
-.h1 {
+.h1login {
   margin-bottom: 30px;
+  font-family: Candara;
 }
 
 .bg {
-  
+  background-image: url(../Signup/signupbg.jpeg);
   display: flex;
   background-size: 100vw 100vh;
   justify-content: center;

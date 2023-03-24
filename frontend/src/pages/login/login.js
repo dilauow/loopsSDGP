@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <div className="bg">
       <form className="form1" onSubmit={signIn}>
-        <h1 className="h1">LogIn to Hire Vision</h1>
+        <h1 className="h1login">LogIn to Hire Vision</h1>
         <div>
           <input
             className="inputlogin"

@@ -13,7 +13,6 @@ function Rightpane() {
   return (
     <div className="RightpaneBox">
       <div className="job-card-container">
-        JB-CON
         <Jobcard />
       </div>
     </div>

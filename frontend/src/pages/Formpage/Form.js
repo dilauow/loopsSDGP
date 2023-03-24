@@ -40,35 +40,35 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className="formfill">
       Form
       <div className="formdiv">
-        <h1>Apply for Job !</h1>
+        <h1 className="h1form">APPLY FOR A JOB !</h1>
         <form onSubmit={handleSubmit}>
           <div className="details-div color">
-            <label> Full Nammmme :</label>
-            <input
+            <label className="labelsform"> Full Name :</label>
+            <input className="textareaform1"
               type="text"
               name="fullname"
               value={formData.fullname || ""}
               onChange={handleChange}
             />
-            <label>Email :</label>
-            <input
+            <label className="labelsform">Email :</label>
+            <input className="textareaform1"
               type="text"
               name="email"
               value={formData.email || ""}
               onChange={handleChange}
             />
-            <label>Address :</label>
-            <input
+            <label className="labelsform" >Address :</label>
+            <input className="textareaform1"
               type="text"
               name="address"
               value={formData.address || ""}
               onChange={handleChange}
             />
-            <label>Job Position :</label>
-            <input
+            <label className="labelsform">Job Position :</label>
+            <input className="textareaform1"
               type="text"
               name="jobposition"
               value={formData.jobposition || ""}
@@ -76,38 +76,38 @@ function Form() {
             />
           </div>
           <div className="ques-div color">
-            <label>Question 1 : </label>
-            <textarea
+            <label className="labelsform" >Question 1 : </label>
+            <textarea className="textareaform"
               name="question1"
               value={formData.question1 || ""}
               onChange={handleChange}
             />
-            <label>Question 2 : </label>
-            <textarea
+            <label className="labelsform" >Question 2 : </label>
+            <textarea className="textareaform"
               name="question2"
               value={formData.question2 || ""}
               onChange={handleChange}
             />
-            <label>Question 3 : </label>
-            <textarea
+            <label className="labelsform" >Question 3 : </label>
+            <textarea className="textareaform"
               name="question3"
               value={formData.question3 || ""}
               onChange={handleChange}
             />
-            <label>Question 4 : </label>
-            <textarea
+            <label className="labelsform" >Question 4 : </label>
+            <textarea className="textareaform"
               name="question4"
               value={formData.question4 || ""}
               onChange={handleChange}
             />
-            <label>Question 5 : </label>
-            <textarea
+            <label className="labelsform" >Question 5 : </label>
+            <textarea className="textareaform"
               name="question5"
               value={formData.question5 || ""}
               onChange={handleChange}
             />
           </div>
-          <button type="submit">Submit</button>
+          <button className="btnsubmit" type="submit">Submit</button>
         </form>
       </div>
     </div>

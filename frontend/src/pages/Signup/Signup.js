@@ -36,12 +36,12 @@ const Signup = () => {
     }
 
   return (
-    <div className='bg'>
-      <form onSubmit={signUp}>
-        <h1>SignUp to Hire Vision</h1>
+    <div className='bg1'>
+      <form className='formsignup' onSubmit={signUp}>
+        <h1 className='h1signup'>SignUp to Hire Vision</h1>
         <div>
           
-          <input
+          <input className='inputSignup'
             type="text"
             id="name"
             placeholder='Name'
@@ -51,7 +51,7 @@ const Signup = () => {
         </div>
         <div>
           
-          <input
+          <input className='inputSignup'
             type="email"
             id="email"
             placeholder='Email'
@@ -61,7 +61,7 @@ const Signup = () => {
         </div>
         <div>
           
-          <input
+          <input className='inputSignup'
             type="password"
             id="password"
             placeholder='Password'
@@ -71,7 +71,7 @@ const Signup = () => {
         </div>
         <div>
           
-          <input
+          <input className='inputSignup'
             type="password"
             id="confirmPassword"
             placeholder='Confirm Password'
@@ -79,7 +79,7 @@ const Signup = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Sign Up</button>
+        <button className='btnsignup' type="submit">Sign Up</button>
         <button className='loginb' onClick={handleclick}>Log In</button>
       </form>
     </div>

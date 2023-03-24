@@ -62,9 +62,7 @@ function Jobcard() {
     <div>
       {data.map((jobs) => (
         <div className="job-card" key={jobs.id}>
-          JB
           <div className="job-card-first-row">
-            JB-1-R
             <div className="job-card-first-col">
               {/* <div className="job-card-icon">ICON</div> */}
               <div className="job-card-title-company-name">
