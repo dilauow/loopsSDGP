@@ -14,6 +14,7 @@
   padding: 10px;
   display: flex;
   justify-content: space-around;
+  border-radius: 20px;
 }
 /* * */
 .job-card-second-row {
@@ -22,6 +23,7 @@
   padding: 10px;
   display: flex;
   justify-content: space-around;
+  border-radius: 20px;
 }
 /* * */
 .job-card-first-col {
@@ -29,12 +31,14 @@
   margin: 5px;
   display: flex;
   border-radius: 15px;
+  max-height: fit-content;
 }
 /* * */
 .job-card-second-col {
   background: blue;
   margin: 5px;
   padding: 8px;
+  border-radius: 15px;
 }
 
 /* * */
@@ -55,7 +59,7 @@
 
 .primaryBtn {
   background-color: #5c6dff;
-  font-size: x-large;
+  font-size: 18px;
   /* padding: 12px 24px; */
   border-radius: 6px;
   color: white;

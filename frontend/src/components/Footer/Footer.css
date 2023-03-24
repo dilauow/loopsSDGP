@@ -1,7 +1,7 @@
 .footer {
-  background-color: #0b1b45;
-  opacity: 70%;
-  color: #fff;
+  background-color: #A555EC;
+  opacity: 100%;
+  color: #000000;
   padding: 20px;
 }
 
@@ -47,7 +47,7 @@ li {
 
 
 .footer-links a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
  
 }

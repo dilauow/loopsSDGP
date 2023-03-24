@@ -31,7 +31,7 @@ form {
   border-radius: 8px;
   margin: 1rem 0 .5rem;
   width: 30%;
-  background: #d0c7c7;
+  background: #F3CCFF;
   overflow: hidden;
   border-radius: 16px;
   color: #010101;
@@ -56,7 +56,7 @@ input {
 }
 
 button[type="submit"] {
-  background-color: #2d4a68;
+  background-color: #A555EC;
   color: #fff;
   border: 0;
   border-radius: 24px;
@@ -70,7 +70,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #1e375b;
+  background-color: palevioletred;
 }
 
 input:focus {
@@ -81,7 +81,7 @@ input:focus {
 .loginb{
   border-radius: 24px;
   border: 0;
-  background-color: #1e375b;
+  background-color: #A555EC;
   color: #fff;
   cursor: pointer;
   padding: 10px 16px;
@@ -91,7 +91,7 @@ input:focus {
 }
 
 .loginb:hover{
-  background-color: #1e375b;
+  background-color: palevioletred;
 }
 
 .loginb:focus{
