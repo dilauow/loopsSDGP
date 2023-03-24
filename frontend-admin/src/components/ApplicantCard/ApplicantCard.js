@@ -1,6 +1,8 @@
 import React from "react";
 import "./ApplicantCard.css";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import ApplicantResultCard from "../ApplicantResults/ApplicantResultCard";
 
 function ApplicantCard() {
   const applicantData = [
@@ -35,7 +37,9 @@ function ApplicantCard() {
 
   const navigate = useNavigate();
 
-  function handleClick() {
+  function handleClick(jobApplicantArray) {
+    console.log(jobApplicantArray);
+    // <ApplicantResultCard obj={jobApplicantArray} />;
     navigate("/ApplicantResultspage");
   }
 
@@ -49,7 +53,9 @@ function ApplicantCard() {
           <br />
           <a>View The CV</a>
           <br />
-          <button onClick={handleClick}>View More Details</button>
+          <button onClick={() => handleClick(jobApplicant)}>
+            View More Details
+          </button>
         </div>
       ))}
     </div>
