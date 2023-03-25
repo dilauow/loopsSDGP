@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/HomeAdmin/Home";
 import { Route, Routes } from "react-router-dom";
 import ApplicantResults from "./pages/ApplicantResults/ApplicantResults";
+import ApplicantResultCard from "./components/ApplicantResults/ApplicantResultCard";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ApplicantCard.css";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import ApplicantResultCard from "../ApplicantResults/ApplicantResultCard";
 
@@ -37,11 +37,25 @@ function ApplicantCard() {
 
   const navigate = useNavigate();
 
-  function handleClick(jobApplicantArray) {
-    console.log(jobApplicantArray);
-    // <ApplicantResultCard obj={jobApplicantArray} />;
-    navigate("/ApplicantResultspage");
-  }
+  // function handleClick(jobApplicantArray) {
+  //   console.log(jobApplicantArray);
+  //   // <ApplicantResultCard obj={jobApplicantArray} />;
+
+  //   navigate("/ApplicantResultspage");
+  // }
+
+  const handleClick = async (applicantid) => {
+    // event.preventDefault();
+    try {
+      const filteredData = applicantData.filter(
+        (applicant) => applicant.id == applicantid
+      );
+      console.log(filteredData);
+      navigate("/ApplicantResultspage", { state: filteredData });
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="applicant-card-container">
@@ -53,7 +67,7 @@ function ApplicantCard() {
           <br />
           <a>View The CV</a>
           <br />
-          <button onClick={() => handleClick(jobApplicant)}>
+          <button onClick={() => handleClick(jobApplicant.id)}>
             View More Details
           </button>
         </div>
