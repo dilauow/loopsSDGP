@@ -8,7 +8,7 @@ import member5 from '../../images/member5.jpeg';
 function AboutUs() {
   return (
     <div className="container">
-      <h1>About Us</h1>
+      <h1>ABOUT US</h1>
       <div className="team">
         <div className="member">
           <img src={member1} alt="member 1" />
@@ -25,9 +25,9 @@ function AboutUs() {
           <img src={member1} alt="member 1" />
             <div className="overlay">
               <div className="text">
-                <h2>Member 1</h2>
+                <h2>Member 2</h2>
                 
-                <p>Student name - Dilshara Hettiarachchige</p>
+                <p>Student name - Sithum Wikramanayaka</p>
                 <p>Student Id number - 20200730</p>
               </div>
             </div>
@@ -37,10 +37,10 @@ function AboutUs() {
           <img src={member1} alt="member 1" />
             <div className="overlay">
               <div className="text">
-                <h2>Member 1</h2>
+                <h2>Member 3</h2>
                 
-                <p>Student name - Dilshara Hettiarachchige</p>
-                <p>Student Id number - 20200730</p>
+                <p>Student name - Diman Randisa</p>
+                <p>Student Id number - 20200719</p>
               </div>
             </div>
         </div>
@@ -49,9 +49,9 @@ function AboutUs() {
           <img src={member4} alt="member 4" />
             <div className="overlay">
               <div className="text">
-                <h2>Member 1</h2>
+                <h2>Member 4</h2>
                 
-                <p>Student name - Dilshara Hettiarachchige</p>
+                <p>Student name - Thilini Abeywikrama</p>
                 <p>Student Id number - 20200730</p>
               </div>
             </div>
@@ -61,9 +61,9 @@ function AboutUs() {
           <img src={member5} alt="member 5" />
             <div className="overlay">
               <div className="text">
-                <h2>Member 1</h2>
+                <h2>Member 5</h2>
                 
-                <p>Student name - Dilshara Hettiarachchige</p>
+                <p>Student name - Sahasri Kaluthota</p>
                 <p>Student Id number - 20200730</p>
               </div>
             </div>

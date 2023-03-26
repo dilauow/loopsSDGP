@@ -2,7 +2,7 @@
 
 .RightpaneBox {
   margin: 20px;
-  background-color: #D09CFA;
+  background-color: #eee6ff;
   flex: 8;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
@@ -18,7 +18,7 @@
 }
 
 .job-card-container {
-  background-color: #FFFFD0;
+  background-color: #eee6ff;
   margin: 20px;
   padding: 10px;
   display: flex;
@@ -27,7 +27,7 @@
 }
 /* * */
 .job-card-first-row {
-  background: #F3CCFF;
+  background: #d2c2fd;
   margin: 5px;
   padding: 10px;
   display: flex;
@@ -35,7 +35,7 @@
 }
 /* * */
 .job-card-second-row {
-  background: #F3CCFF;
+  background: #d2c2fd;
   margin: 5px;
   padding: 10px;
   display: flex;
@@ -43,14 +43,14 @@
 }
 /* * */
 .job-card-first-col {
-  background: #D09CFA;
+  background: #d2c2fd;
   margin: 5px;
   display: flex;
   border-radius: 15px;
 }
 /* * */
 .job-card-second-col {
-  background: #D09CFA;
+  background: #d2c2fd;
   margin: 5px;
   padding: 8px;
 }

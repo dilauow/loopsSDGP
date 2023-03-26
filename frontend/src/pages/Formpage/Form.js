@@ -41,7 +41,6 @@ function Form() {
 
   return (
     <div className="formfill">
-      Form
       <div className="formdiv">
         <h1 className="h1form">APPLY FOR A JOB !</h1>
         <form onSubmit={handleSubmit}>
@@ -107,7 +106,9 @@ function Form() {
               onChange={handleChange}
             />
           </div>
-          <button className="btnsubmit" type="submit">Submit</button>
+          <div className="btnsbmit1">
+          <button className="btnsubmit" type="submit">SUBMIT</button>
+          </div>
         </form>
       </div>
     </div>

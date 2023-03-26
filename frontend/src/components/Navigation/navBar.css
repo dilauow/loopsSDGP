@@ -1,7 +1,7 @@
 .navBarBox{
     height: 60px;
     width: 100%;
-    background-color: #A555EC;
+    background-color: #b39afd;
     display: flex;
     align-items: center;
     position: sticky;
@@ -39,7 +39,7 @@
     overflow: hidden;
     border-radius: 25px;
     max-width: 140px;
-    background-color: #D09CFA;
+    background-color: #b39afd;
 }
 
 

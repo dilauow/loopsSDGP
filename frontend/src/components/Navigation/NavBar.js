@@ -30,7 +30,7 @@ export default function NavBar() {
         <div className="navBarRight">
             <div className="navBarLinks">
                 <Stack spacing={3} className='buttons'>
-                    <Button className='bt2' variant='Candidate' onClick={handleclick}>Admin Sign-in</Button>
+                    {/* <Button className='bt2' variant='Candidate' onClick={handleclick}>Admin Sign-in</Button> */}
                 </Stack>
             </div>
         </div>

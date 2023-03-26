@@ -1,12 +1,12 @@
 .formdiv {
-  background-color: #F3CCFF;
+  background-color: #d2c2fd;
   margin: 50px;
   padding: 20px;
   border-radius: 25px;
 }
 
 .formfill{
-  background-image: url(../Signup/signupbg.jpeg);
+  background-color: white;
 }
 
 .color {
@@ -29,30 +29,45 @@
 }
 
 .btnsubmit{
-  border: none; /* Remove border */
-  color: black; /* Set text color */
-  padding: 12px 24px; /* Set padding */
-  text-align: center; /* Center align text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Display as inline block */
-  font-size: 16px; /* Set font size */
-  margin: 4px 2px; /* Set margin */
-  cursor: pointer; /* Set cursor style */
-  border-radius: 15px; /* Add rounded corners */
-  background-color: #A555EC;
-  justify-content: center;
-  margin-top: 20px; 
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 10px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
 
+  color: #fff;
+  background: #916eff;
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  justify-content: center; /* horizontally center the button */
+  align-items: center; /* vertically center the button */
+}
+
+.btnsubmit:hover{
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.btnsbmit1{
+  display: flex; /* enable flexbox layout */
+  justify-content: center; /* horizontally center the button */
+  align-items: center; /* vertically center the button */
 }
 
 
 .textareaform{
   border-radius: 15px;
+  line-height: 25px;
+  font-size: medium;
 }
 
 .textareaform1{
   border-radius: 15px;
-  resize: both;
-  overflow: auto;
+  line-height: 25px;
+  font-size: medium;
 }
