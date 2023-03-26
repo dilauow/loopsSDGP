@@ -26,6 +26,9 @@
 
 .labelsform{
   color: black;
+  padding-top:5px;
+  padding-bottom: 4px;
+  font-family: Optima;
 }
 
 .btnsubmit{
@@ -61,13 +64,14 @@
 
 
 .textareaform{
-  border-radius: 15px;
+  border-radius: 10px;
   line-height: 25px;
   font-size: medium;
 }
 
 .textareaform1{
-  border-radius: 15px;
+  border-radius: 10px;
   line-height: 25px;
   font-size: medium;
 }
+

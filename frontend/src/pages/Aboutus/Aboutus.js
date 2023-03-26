@@ -3,6 +3,8 @@ import './Aboutus.css';
 import member4 from '../../images/member4.png';
 import member1 from '../../images/member1.jpeg';
 import member5 from '../../images/member5.jpeg';
+import member2 from '../../images/member2.jpeg';
+import member3 from '../../images/member3.jpeg';
 
 
 function AboutUs() {
@@ -22,7 +24,7 @@ function AboutUs() {
             </div>
         </div>
         <div className="member">
-          <img src={member1} alt="member 1" />
+          <img src={member2} alt="member 1" />
             <div className="overlay">
               <div className="text">
                 <h2>Member 2</h2>
@@ -34,7 +36,7 @@ function AboutUs() {
         </div>
 
         <div className="member">
-          <img src={member1} alt="member 1" />
+          <img src={member3} alt="member 1" />
             <div className="overlay">
               <div className="text">
                 <h2>Member 3</h2>

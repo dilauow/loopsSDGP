@@ -19,7 +19,7 @@ export default function Frontpage() {
       <body className='banner1'>
         <div className='content1'>
           <h1>WELCOME TO HIREVISION</h1>
-          <p>“You know you are on the road to success if you would do your job, and not be paid for it.”<br></br> - Oprah Winfrey -</p>
+          <p className='para1'>“You know you are on the road to success if you would do your job, and not be paid for it.”<br></br> - Oprah Winfrey -</p>
           <div>
             <button className='btnhome' type='button' onClick={handleclick}><span></span>Get Start</button>
             <button className='btnhome' type='button' onClick={handleclick2}><span></span>About us</button>
