@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Form.css";
+import { createApplication } from "../../apiController";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -18,25 +19,20 @@ function Form() {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
-    // Send form data to server
-    fetch("/api/jobs", {
-      method: "POST",
-      body: JSON.stringify(formData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-    alert(formData);
+    const fullAnswer = [formData.question1 + ". " +formData.question2+ ". " +formData.question3 + ". " +formData.question4 + ". " +formData.question5 ]
+    console.log(fullAnswer);
+    const FormSendDataModel ={
+      name: formData.userName,
+      address: formData.address,
+      position: formData.position,
+      cv: formData.CV,
+      answers: fullAnswer,
+      prediction : [0]
+    }
+  
+    await createApplication(FormSendDataModel);
   };
 
   return (
