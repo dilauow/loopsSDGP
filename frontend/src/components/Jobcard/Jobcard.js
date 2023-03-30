@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BUTTON_TYPES } from "../common/Buttondata";
 import "./Jobcard.css";
 import { MdOutlineWorkOutline, MdOutlineVerified } from "react-icons/md";
@@ -7,18 +7,18 @@ import { TfiLocationPin } from "react-icons/tfi";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import Button from "../Button/Button";
 import { useNavigate } from "react-router-dom";
+import { getJobs } from "../../apiController";
+import { useState } from "react";
 
 function Jobcard() {
-  /* This part use for fetch data*/
-  /* const [data, setData] = useState([]);
+  const getDBJobs  = async ()=>{
+    const temp = await getJobs()
+    console.log(temp);
+    return temp
+   }
+   
 
-  useEffect(() => {
-    fetch('/api/my_data')
-      .then(response => response.json())
-       .then(data => setData(data));
-   }, []); */
-
-  const data = [
+  let data = [
     {
       id: 1,
       jobtitle: "Data Engineering",
@@ -45,6 +45,33 @@ function Jobcard() {
     },
   ];
 
+  /* This part use for fetch data*/
+  /* const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/my_data')
+      .then(response => response.json())
+       .then(data => setData(data));
+
+   }, []); */
+
+   
+   const [jobs, setJobs ] = useState([])
+
+  
+
+  useEffect (()=>{
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    getDBJobs().then((jb)=>{
+      setJobs(jb)
+    })
+  
+    // setJobs(newJobs)
+
+  },[])
+
+  console.log(jobs);
+
   const navigate = useNavigate();
 
   function handleClick(jobtitle) {
@@ -58,57 +85,63 @@ function Jobcard() {
     navigate2("/preview");
   }
 
-  return (
-    <div>
-      {data.map((jobs) => (
-        <div className="job-card" key={jobs.id}>
-          <div className="job-card-first-row">
-            <div className="job-card-first-col">
-              {/* <div className="job-card-icon">ICON</div> */}
-              <div className="job-card-title-company-name">
-                <h2>{jobs.jobtitle}</h2>
-                <h3>
-                  Surge Global
-                  <MdOutlineVerified className="h-icons" />
-                </h3>
+    return (
+      <div>
+        {jobs.map((jobs) => (
+          <div className="job-card" key={jobs.id}>
+            <div className="job-card-first-row">
+              <div className="job-card-first-col">
+                {/* <div className="job-card-icon">ICON</div> */}
+                <div className="job-card-title-company-name">
+                  <h2>{jobs.jobrole}</h2>
+                  <h3>
+                    Surge Global
+                    <MdOutlineVerified className="h-icons" />
+                  </h3>
+                </div>
+              </div>
+              <div className="job-card-second-col">
+                {/* <Button
+                  onClick={handleClick}
+                  type={BUTTON_TYPES.PRIMARY}
+                  btnText="Apply"
+                /> */}
+                <button
+                  className="primaryBtn"
+                  onClick={() => handleClick(jobs.jobrole)}
+                >
+                  APPLY
+                </button>
               </div>
             </div>
-            <div className="job-card-second-col">
-              {/* <Button
-                onClick={handleClick}
-                type={BUTTON_TYPES.PRIMARY}
-                btnText="Apply"
-              /> */}
-              <button
-                className="primaryBtn"
-                onClick={() => handleClick(jobs.jobtitle)}
-              >
-                APPLY
-              </button>
+            <div className="job-card-second-row">
+              <h3>
+                <MdOutlineWorkOutline className="h-icons" />
+                {jobs.fullorparttime}
+              </h3>
+              <h3>
+                <HiOutlineComputerDesktop className="h-icons" />
+                {jobs.worktype}
+              </h3>
+              <h3>
+                <TfiLocationPin className="h-icons" />
+                {jobs.location}
+              </h3>
+              <h3>
+                <AiOutlineDollarCircle className="h-icons" />
+                LKR {jobs.salary}
+              </h3>
             </div>
           </div>
-          <div className="job-card-second-row">
-            <h3>
-              <MdOutlineWorkOutline className="h-icons" />
-              {jobs.jobtime}
-            </h3>
-            <h3>
-              <HiOutlineComputerDesktop className="h-icons" />
-              {jobs.jobMethod}
-            </h3>
-            <h3>
-              <TfiLocationPin className="h-icons" />
-              {jobs.joblocation}
-            </h3>
-            <h3>
-              <AiOutlineDollarCircle className="h-icons" />
-              LKR {jobs.jobsalary}
-            </h3>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+        ))
+        
+        }
+      </div>
+    );
+
+
+
+  
 }
 
 export default Jobcard;

@@ -7,9 +7,14 @@ import { AiOutlineDollarCircle } from "react-icons/ai";
 import Button from "../Button/Button";
 import { BUTTON_TYPES } from "../common/Buttondata";
 import Jobcard from "../Jobcard/Jobcard";
+import { getJobs } from "../../apiController";
 // import { BUTTON_TYPE } from "./components/common/Buttondata.js";
 
 function Rightpane() {
+  
+
+ 
+
   return (
     <div className="RightpaneBox">
       <div className="job-card-container">

@@ -24,3 +24,13 @@ export const createApplication = async (application) => {
         console.error(error);   
     }
 }
+
+export const getJobs = async () =>{
+  try{
+    const res = await api.get("/jobs");
+    return res.data
+
+  }catch(error){
+    console.error(error);
+  }
+}
