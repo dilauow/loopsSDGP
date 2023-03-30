@@ -7,7 +7,8 @@ function Form() {
     fullname: "",
     email: "",
     address: "",
-    jobposition: "",
+    position: "",
+    cv: "",
     question1: "",
     question2: "",
     question3: "",
@@ -21,17 +22,28 @@ function Form() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const fullAnswer = [formData.question1 + ". " +formData.question2+ ". " +formData.question3 + ". " +formData.question4 + ". " +formData.question5 ]
+    const fullAnswer = [
+      formData.question1 +
+        ". " +
+        formData.question2 +
+        ". " +
+        formData.question3 +
+        ". " +
+        formData.question4 +
+        ". " +
+        formData.question5,
+    ];
     console.log(fullAnswer);
-    const FormSendDataModel ={
-      name: formData.userName,
+    const FormSendDataModel = {
+      name: formData.fullname,
       address: formData.address,
       position: formData.position,
-      cv: formData.CV,
+      cv: formData.cv,
       answers: fullAnswer,
-      prediction : [0]
-    }
-  
+      prediction: [0],
+    };
+    console.log(FormSendDataModel);
+
     await createApplication(FormSendDataModel);
   };
 
@@ -42,28 +54,32 @@ function Form() {
         <form onSubmit={handleSubmit}>
           <div className="details-div color">
             <label className="labelsform"> Full Name :</label>
-            <input className="textareaform1"
+            <input
+              className="textareaform1"
               type="text"
               name="fullname"
               value={formData.fullname || ""}
               onChange={handleChange}
             />
             <label className="labelsform">Email :</label>
-            <input className="textareaform1"
+            <input
+              className="textareaform1"
               type="text"
               name="email"
               value={formData.email || ""}
               onChange={handleChange}
             />
-            <label className="labelsform" >Address :</label>
-            <input className="textareaform1"
+            <label className="labelsform">Address :</label>
+            <input
+              className="textareaform1"
               type="text"
               name="address"
               value={formData.address || ""}
               onChange={handleChange}
             />
             <label className="labelsform">Job Position :</label>
-            <input className="textareaform1"
+            <input
+              className="textareaform1"
               type="text"
               name="jobposition"
               value={formData.jobposition || ""}
@@ -71,39 +87,46 @@ function Form() {
             />
           </div>
           <div className="ques-div color">
-            <label className="labelsform" >Question 1 : </label>
-            <textarea className="textareaform"
+            <label className="labelsform">Question 1 : </label>
+            <textarea
+              className="textareaform"
               name="question1"
               value={formData.question1 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform" >Question 2 : </label>
-            <textarea className="textareaform"
+            <label className="labelsform">Question 2 : </label>
+            <textarea
+              className="textareaform"
               name="question2"
               value={formData.question2 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform" >Question 3 : </label>
-            <textarea className="textareaform"
+            <label className="labelsform">Question 3 : </label>
+            <textarea
+              className="textareaform"
               name="question3"
               value={formData.question3 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform" >Question 4 : </label>
-            <textarea className="textareaform"
+            <label className="labelsform">Question 4 : </label>
+            <textarea
+              className="textareaform"
               name="question4"
               value={formData.question4 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform" >Question 5 : </label>
-            <textarea className="textareaform"
+            <label className="labelsform">Question 5 : </label>
+            <textarea
+              className="textareaform"
               name="question5"
               value={formData.question5 || ""}
               onChange={handleChange}
             />
           </div>
           <div className="btnsbmit1">
-          <button className="btnsubmit" type="submit">SUBMIT</button>
+            <button className="btnsubmit" type="submit">
+              SUBMIT
+            </button>
           </div>
         </form>
       </div>
