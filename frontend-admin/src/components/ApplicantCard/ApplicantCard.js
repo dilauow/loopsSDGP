@@ -1,10 +1,24 @@
 import React from "react";
 import "./ApplicantCard.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import { getJobs } from "../../controllers/applicationController";
 import ApplicantResultCard from "../ApplicantResults/ApplicantResultCard";
 
 function ApplicantCard() {
+
+  const [jobApplications, setJobApplications] = useState([])
+
+  useEffect(()=>{
+    
+    getJobs().then(jobA =>{
+      setJobApplications(jobA)
+      console.log(jobA);
+    })
+
+
+  },[])
+  
   const applicantData = [
     {
       id: 1,
@@ -37,18 +51,15 @@ function ApplicantCard() {
 
   const navigate = useNavigate();
 
-  // function handleClick(jobApplicantArray) {
-  //   console.log(jobApplicantArray);
-  //   // <ApplicantResultCard obj={jobApplicantArray} />;
-
-  //   navigate("/ApplicantResultspage");
-  // }
 
   const handleClick = async (applicantid) => {
     // event.preventDefault();
+    console.log(applicantid);
     try {
-      const filteredData = applicantData.filter(
-        (applicant) => applicant.id == applicantid
+      const filteredData = jobApplications.filter(
+        (applicant) => {
+         
+          return applicant.id === applicantid}
       );
       console.log(filteredData);
       navigate("/ApplicantResultspage", { state: filteredData });
@@ -59,7 +70,7 @@ function ApplicantCard() {
 
   return (
     <div className="applicant-card-container">
-      {applicantData.map((jobApplicant) => (
+      {jobApplications.map((jobApplicant) => (
         <div className="card" key={jobApplicant.id}>
           <h2>{jobApplicant.name}</h2>
           <br />

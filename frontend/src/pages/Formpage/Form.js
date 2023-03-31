@@ -4,6 +4,7 @@ import { createApplication } from "../../apiController";
 
 function Form() {
   const [formData, setFormData] = useState({
+    id:0,
     fullname: "",
     email: "",
     address: "",
@@ -35,6 +36,7 @@ function Form() {
     ];
     console.log(fullAnswer);
     const FormSendDataModel = {
+      id: Math.floor(Math.random() * 10000),
       name: formData.fullname,
       address: formData.address,
       position: formData.position,
@@ -82,7 +84,7 @@ function Form() {
               className="textareaform1"
               type="text"
               name="jobposition"
-              value={formData.jobposition || ""}
+              value={formData.position || ""}
               onChange={handleChange}
             />
           </div>
