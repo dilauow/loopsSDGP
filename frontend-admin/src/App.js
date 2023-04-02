@@ -5,6 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import ApplicantResults from "./pages/ApplicantResults/ApplicantResults";
 import ApplicantResultCard from "./components/ApplicantResults/ApplicantResultCard";
 import Login from "../src/pages/login/login"
+import Tos from "./pages/TermsOfServices/termsofservice"
+import Ppage from "./pages/PrivacyPolicy/privacypolicy"
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/ApplicantResultspage" element={<ApplicantResults />} />
         <Route path="/loginpage" element={<Login/>} />
+        <Route path="/tfc" element={<Tos/>} />
+        <Route path="/privacy" element={<Ppage/>} />
       </Routes>
     </div>
   );

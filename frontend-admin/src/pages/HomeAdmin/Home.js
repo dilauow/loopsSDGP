@@ -1,5 +1,7 @@
 import React from "react";
 import ApplicantCard from "../../components/ApplicantCard/ApplicantCard";
+import NavBar from "../../components/Navigation/NavBar"
+import Footer from "../../components/Footer/Footer"
 import "./Home.css";
 import { useNavigate } from 'react-router-dom';
 
@@ -10,13 +12,18 @@ function Home() {
       navigate("/loginpage")
   }
   return (
-    <div className="main-div">
-      <button onClick={handleclick}> Admin-Login </button>
-      Home
+    <div className="homebg">
+      <NavBar/>
+      <div className="main-div">
+        <h1 className="head1">JOB APPLICANTS</h1>
       <div className="jobs-container">
         <ApplicantCard />
       </div>
-    </div>
+      </div>
+      <div className="footer1">
+        <Footer/>
+      </div>
+    </div> 
   );
 }
 

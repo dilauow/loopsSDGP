@@ -5,7 +5,6 @@ import "./ApplicantResults.css";
 function ApplicantResults() {
   return (
     <div>
-      ApplicantResults-blabla
       <ApplicantResultCard />
     </div>
   );

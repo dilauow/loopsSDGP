@@ -1,0 +1,72 @@
+.navBarBox{
+    height: 60px;
+    width: 100%;
+    background-color: #b39afd;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.personlogo{
+    width: 250px;
+    height: 200px;
+}
+
+.navBarLeft{
+    flex: 2;
+}
+
+.navBarCenter{
+    flex: 10;
+}
+
+.navBarRight{
+    flex: 2;
+}
+
+.logo{
+    font-size: 38px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: black;
+    font-family: Candara;
+}
+
+.navBarLinks{
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 25px;
+    max-width: 140px;
+    background-color: #b39afd;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+  
+    color: #000000;
+    font-weight: bolder;
+    font-size: medium;
+    background: #b39afd;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .buttons:hover {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
+
+  .bt2 {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+

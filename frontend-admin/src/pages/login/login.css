@@ -31,7 +31,7 @@
   border-radius: 8px;
   margin: 1rem 0 .5rem;
   width: 30%;
-  background: #F3CCFF;
+  background: #f1d5fa;
   overflow: hidden;
   border-radius: 16px;
   color: #010101;
@@ -70,7 +70,7 @@ label {
 }
 
 .buttonsignup[type="submit"]:hover {
-  background-color: palevioletred;
+  background-color: rgb(171, 129, 240);
 }
 
 .inputlogin:focus {
