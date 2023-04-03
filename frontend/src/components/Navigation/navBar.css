@@ -14,7 +14,7 @@
 }
 
 .navBarLeft{
-    flex: 4;
+    flex: 2;
 }
 
 .navBarCenter{
@@ -27,7 +27,7 @@
 
 .logo{
     font-size: 38px;
-    margin-left: 10px;
+    margin-left: 28px;
     font-weight: bold;
     color: black;
     font-family: Candara;

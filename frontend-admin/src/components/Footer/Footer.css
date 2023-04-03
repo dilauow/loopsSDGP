@@ -1,10 +1,11 @@
 .footer {
   bottom: 0;
+  height: 50%;
   width: 100%;
   background-color: #b39afd;
   opacity: 100%;
   color: #000000;
-  padding: 10px;
+  padding: 12px;
   border-top: 1px solid #b39afd;
   position: sticky;
 }
@@ -20,13 +21,15 @@
 h1 {
   margin-left: 4px;
   padding-right: 40px;
-  font-size: 45px;
+  font-size: 50px;
   font-family: Candara;
   cursor: pointer;
+  padding-top: 1px;
+  padding-bottom: 10px;
 }
 
 .list {
-  padding-left: 50px;
+  padding-left: 45px;
 }
 
 li {
@@ -67,6 +70,7 @@ li {
   font-size: 14px;
   text-align: center;
   font-family: Candara;
+  padding-top: 10px;
 }
 
 .footer-links-column li:hover {
