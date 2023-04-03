@@ -1,0 +1,123 @@
+.result-card-container {
+    padding: 2rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-image: url(../ApplicantResults/output.jpg);
+  }
+
+  .results{
+    display: flex;
+    flex-direction: column;
+    border: #b39afd 4px solid;
+    background-color: white;
+    padding-left: 230px;
+    padding-right: 300px;
+    border-radius: 15px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .applicant-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applicant-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .applicant-position {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .applicant-answer {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .applicant-prediction {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+    text-align: left;
+  }
+
+  
+  .prediction-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .prediction-item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  
+  .prediction-label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+  }
+  
+  .prediction-value {
+    font-weight: normal;
+    font-size: 1.2rem;
+  }
+  
+  .head{
+    text-align: center;
+  }
+
+  .btnOK {
+    align-items: center;
+    padding: 10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+  
+    color: #000000;
+    background: #ae97fa;
+     background-origin: border-box;
+    box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btnOK:hover {
+    background-color: #93b0d8;
+  }
+
+  .btnOKdiv{
+    padding-top: 30px;
+    align-items: center;
+  }
+
+  .applicant-prediction-PT{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-decoration-line: underline;
+  }
+
+  .applicant-predictionAnswer{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+  }
+  

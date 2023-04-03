@@ -1,10 +1,69 @@
 .main-div {
-  background-color: brown;
-  margin: 30px;
-  padding: 20px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #f2f2f2;
+  background-image: url(../../components/ApplicantCard/wecome2admin22.png); */
+} 
 
 .jobs-container {
-  background-color: beige;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background-color: #ddd3fc;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px;
+}
+
+.card a {
+  font-size: 16px;
+  color: #333;
+  margin: 10px;
+}
+
+.card button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.card button:hover {
+  background-color: #666;
+}
+
+.footer1{
+  padding-top: 50px;
+}
+
+.homebg{
+  background-image: url(../HomeAdmin/wecome2admin22.png);
+}
+
+.head1{
+ font-size: 2.2rem; 
 }
