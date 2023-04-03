@@ -10,6 +10,7 @@
     flex-direction: column;
     border: #b39afd 4px solid;
     background-color: white;
+    background-image: url(./result22.png);
     padding-left: 230px;
     padding-right: 300px;
     border-radius: 15px;
@@ -23,7 +24,7 @@
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -32,12 +33,12 @@
   .applicant-name {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
   }
   
   .applicant-position {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
   }
   
   .applicant-answer {
@@ -51,6 +52,7 @@
     margin-bottom: 0.5rem;
     font-family: sans-serif;
     text-align: left;
+    font-family: Candara;
   }
 
   
@@ -70,7 +72,7 @@
     font-weight: bold;
     margin-right: 0.5rem;
     font-size: 1.2rem;
-    font-family: sans-serif;
+    font-family: Candara;
   }
   
   .prediction-value {
@@ -84,7 +86,7 @@
 
   .btnOK {
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 40px;
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
     border-radius: 6px;
     border: none;
@@ -111,6 +113,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     text-decoration-line: underline;
+    font-family: Candara;
   }
 
   .applicant-predictionAnswer{
@@ -118,6 +121,6 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    font-family: sans-serif;
+    font-family: Candara;
   }
   

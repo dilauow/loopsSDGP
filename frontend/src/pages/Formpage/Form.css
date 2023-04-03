@@ -4,6 +4,8 @@
   align-items: center;
   height: 100%;
   background-image: url(../Formpage/result1.jpg);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .formdiv {
