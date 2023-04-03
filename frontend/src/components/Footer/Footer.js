@@ -17,6 +17,10 @@ function Footer() {
     navigate("/prs")
   }
 
+  function handleclick3() {
+    navigate("/home")
+  }
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -26,7 +30,7 @@ function Footer() {
 
           <div className='list'>
             <ul className="footer-links-column">
-              <li>Home</li>
+              <li onClick={handleclick3}>Home</li>
               <li>Post a Job</li>
             </ul>
           </div>
