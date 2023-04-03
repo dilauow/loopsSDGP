@@ -1,9 +1,11 @@
 import React from 'react'
 import './privacypolicy.css'
+import { motion } from "framer-motion";
+import Footer from '../../components/Footer/Footer'
 
 function privacypolicy() {
   return (
-    <div className="privacy-policy">
+    <motion.div className="privacy-policy" initial={{width:0}} animate={{width:"100%"}} exit={{x:"100%"}}>
       <header className='pp'>
         <h1>Privacy Policy</h1>
       </header>
@@ -18,7 +20,10 @@ function privacypolicy() {
       <p>We take reasonable measures to protect your personal information from unauthorized access, disclosure, or alteration.</p>
       <h2>Changes to this Privacy Policy</h2>
       <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-    </div>
+      <div>
+        <Footer/>
+      </div>
+    </motion.div>
   )
 }
 

@@ -1,9 +1,11 @@
 import React from 'react'
 import './Termofservice.css'
+import { motion } from "framer-motion";
+import Footer from '../../components/Footer/Footer'
 
 function termsofservice() {
   return (
-    <div className="Apps">
+    <motion.div className="Apps" initial={{width:0}} animate={{width:"100%"}} exit={{x:"100%"}}>
       <header className="App-header">
         <h1>Terms of Service</h1>
       </header>
@@ -46,7 +48,10 @@ function termsofservice() {
           please contact us at hirevision@gmail.com.
         </p>
       </main>
-    </div>
+      <div className='footer1'>
+        <Footer/>
+      </div>
+    </motion.div>
   )
 }
 

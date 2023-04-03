@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 130px;
   /* background-color: #f2f2f2;
   background-image: url(../../components/ApplicantCard/wecome2admin22.png); */
 } 
