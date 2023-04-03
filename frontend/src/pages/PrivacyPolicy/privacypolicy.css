@@ -1,5 +1,5 @@
 .privacy-policy {
-    width: 95%;
+    width: 100%;
     /* margin: 0 auto;
     padding: 20px; */
   }
@@ -28,3 +28,8 @@
     line-height: 1.5;
     margin-bottom: 20px;
   }
+
+.discription{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}

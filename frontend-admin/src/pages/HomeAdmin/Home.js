@@ -4,6 +4,7 @@ import NavBar from "../../components/Navigation/NavBar"
 import Footer from "../../components/Footer/Footer"
 import "./Home.css";
 import { useNavigate } from 'react-router-dom';
+import { animate, motion } from "framer-motion";
 
 function Home() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function Home() {
       navigate("/loginpage")
   }
   return (
-    <div className="homebg">
+    <motion.div className="homebg" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
       <NavBar/>
       <div className="main-div">
         <h1 className="head1">JOB APPLICANTS</h1>
@@ -23,7 +24,7 @@ function Home() {
       <div className="footer1">
         <Footer/>
       </div>
-    </div> 
+    </motion.div> 
   );
 }
 

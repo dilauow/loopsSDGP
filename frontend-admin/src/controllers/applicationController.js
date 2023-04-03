@@ -18,3 +18,13 @@ export const getJobs = async () =>{
       console.error(error);
     }
   }
+
+
+  export const createJob = async (job) => {
+    try {
+        const res = await api.post("/jobs", job,headers);
+        return res.data;
+    } catch (error) {
+        console.error(error);   
+    }
+}

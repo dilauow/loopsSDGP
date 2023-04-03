@@ -11,10 +11,6 @@ import { getJobs } from "../../apiController";
 // import { BUTTON_TYPE } from "./components/common/Buttondata.js";
 
 function Rightpane() {
-  
-
- 
-
   return (
     <div className="RightpaneBox">
       <div className="job-card-container">

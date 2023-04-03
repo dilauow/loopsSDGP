@@ -1,11 +1,11 @@
 import React from 'react'
 import './Termofservice.css'
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Footer from '../../components/Footer/Footer'
 
 function termsofservice() {
   return (
-    <motion.div className="Apps" initial={{width:0}} animate={{width:"100%"}} exit={{x:"100%"}}>
+    <div className="Apps" initial={{width:0}} animate={{width:"100%"}} exit={{x:"100%"}}>
       <header className="App-header">
         <h1>Terms of Service</h1>
       </header>
@@ -51,7 +51,7 @@ function termsofservice() {
       <div className='footer1'>
         <Footer/>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

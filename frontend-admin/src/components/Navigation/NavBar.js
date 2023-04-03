@@ -15,13 +15,13 @@ export default function NavBar() {
     const navigate2 = useNavigate();
 
     function handleclick2(){
-        navigate2("/preview")
+        navigate2("/")
     }
 
   return (
     <div className="navBarBox">
         <div className="navBarLeft">
-            <span className='logo'>HireVision</span>
+            <span className='logo' onClick={handleclick2}>HireVision</span>
             <HailIcon className='personlogo'/>
         </div>
         <div className="navBarCenter">

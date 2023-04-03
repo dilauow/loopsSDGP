@@ -2,7 +2,7 @@
 
 .RightpaneBox {
   margin: 20px;
-  background-color: #eee6ff;
+  background-color: white;
   flex: 8;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
@@ -18,7 +18,7 @@
 }
 
 .job-card-container {
-  background-color: #eee6ff;
+  background-color: white;
   margin: 20px;
   padding: 10px;
   display: flex;

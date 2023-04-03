@@ -6,6 +6,8 @@ import Loginpage from "./pages/login/login";
 import Previewpage from "./pages/Previewpage/Preview";
 import Signup from "./pages/Signup/Signup";
 import Aboutus from "./pages/Aboutus/Aboutus";
+import Tos from "./pages/TermsOfServices/termsofservice" 
+import Ppage from "./pages/PrivacyPolicy/privacypolicy"
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/preview" element={<Previewpage />} />
         <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/tos" element={<Tos/>} />
+        <Route path="/prs" element={<Ppage/>} />
       </Routes>
     </div>
   );

@@ -1,8 +1,12 @@
 .footer {
+  bottom: 0;
+  width: 100%;
   background-color: #b39afd;
   opacity: 100%;
   color: #000000;
   padding: 20px;
+  border-top: 1px solid #b39afd;
+  position: sticky;
 }
 
 .footer-container {
@@ -14,8 +18,11 @@
 }
 
 h1 {
-  margin-left: 10px;
+  margin-left: 4px;
   padding-right: 40px;
+  font-size: 45px;
+  font-family: Candara;
+  cursor: pointer;
 }
 
 .list {
@@ -43,13 +50,13 @@ li {
 .footer-links-column li {
   margin-bottom: 10px;
   text-decoration: none;
+  text-align: left;
 }
 
 
 .footer-links a {
   color: #000000;
   text-decoration: none;
- 
 }
 
 
@@ -59,3 +66,12 @@ li {
   font-size: 14px;
   text-align: center;
 }
+
+.footer-links-column li:hover {
+  color: #ffffff;
+  background-color: #b39afd;
+  cursor: pointer;
+}
+
+
+
