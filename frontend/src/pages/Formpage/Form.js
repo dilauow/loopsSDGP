@@ -90,35 +90,35 @@ function Form() {
             />
           </div>
           <div className="ques-div color">
-            <label className="labelsform">Question 1 : </label>
+            <label className="labelsform">1 : How do you stay open-minded when dealing with people from different backgrounds or cultures than your own ? </label>
             <textarea
               className="textareaform"
               name="question1"
               value={formData.question1 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">Question 2 : </label>
+            <label className="labelsform">2 : How do you typically plan and organize your work? Can you give an example of how this has helped you achieve a specific goal ?</label>
             <textarea
               className="textareaform"
               name="question2"
               value={formData.question2 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">Question 3 : </label>
+            <label className="labelsform">3 : Can you tell me about a time when you had to work in a team? How did you contribute to the team's success?</label>
             <textarea
               className="textareaform"
               name="question3"
               value={formData.question3 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">Question 4 : </label>
+            <label className="labelsform">4 : If you are supposed to work on a project that's out of your comfortable zone. Would you adapt or not. Give reasons for yes or no</label>
             <textarea
               className="textareaform"
               name="question4"
               value={formData.question4 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">Question 5 : </label>
+            <label className="labelsform">5 : Tell me about a time when you had to work with someone who had a very different personality or work style than your own. How did you handle the situation ?</label>
             <textarea
               className="textareaform"
               name="question5"

@@ -32,6 +32,7 @@ h1 {
 li {
   padding-bottom: 10px;
   padding-left: 50px;
+  font-family: Candara;
 }
 
 .footer-links {
@@ -65,6 +66,7 @@ li {
   margin: 0;
   font-size: 14px;
   text-align: center;
+  font-family: Candara;
 }
 
 .footer-links-column li:hover {

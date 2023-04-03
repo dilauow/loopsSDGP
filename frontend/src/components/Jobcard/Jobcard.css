@@ -44,7 +44,7 @@
 /* * */
 .job-card-title-company-name h3 {
   padding-top: 12px;
-  font-family: Goudy Old Style;
+  font-family: Candara;
 }
 
 /* * */
@@ -58,10 +58,9 @@
   flex-direction: column;
   align-items: center;
   padding: 6px 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  font-family: Candara;
   border-radius: 6px;
   border: none;
-
   color: #fff;
   background: #8f6bfc;
    background-origin: border-box;
@@ -76,4 +75,4 @@
   outline: 0;
 }
 
-h2{font-family: Goudy Old Style;}
+h2{font-family: Candara;}
