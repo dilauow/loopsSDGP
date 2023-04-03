@@ -2,6 +2,7 @@ import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./ApplicantResultsCard.css";
 import ApplicantCard from "../ApplicantCard/ApplicantCard";
+import { motion } from "framer-motion";
 
 function ApplicantResultCard() {
   const location = useLocation();
@@ -15,7 +16,7 @@ function ApplicantResultCard() {
     }
 
   return (
-    <div className="result-card-container">
+    <motion.div className="result-card-container" initial={{width:0}} animate={{width:"100%"}} exit={{x:"100%"}}>
       <h1 className="head">APPLICANT RESULTS</h1>
       {data.map((applicant) => (
         <div key={applicant.id} className="results">
@@ -51,7 +52,7 @@ function ApplicantResultCard() {
       <div className="btnOKdiv">
         <button className="btnOK" onClick={handleclick}>OK</button>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

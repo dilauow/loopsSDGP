@@ -25,7 +25,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         
-        <h1>HireVision</h1>
+        <h1 onClick={handleclick}>HireVision</h1>
         <div className="footer-links">
           
           <div className='list'>

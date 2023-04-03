@@ -1,14 +1,15 @@
 
 .Apps {
   text-align: center;
-  padding: 50px;
+  /* padding: 50px; */
 }
+
 
 .App-header {
   background-color: #b39afd;
   min-height: 10vh;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -33,3 +34,4 @@ p {
   text-align: center;
   line-height: 1.5;
 }
+

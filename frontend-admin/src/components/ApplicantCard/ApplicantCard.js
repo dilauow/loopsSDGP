@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
 import { getJobs } from "../../controllers/applicationController";
 import ApplicantResultCard from "../ApplicantResults/ApplicantResultCard";
+import { motion } from "framer-motion";
 
 function ApplicantCard() {
 
@@ -69,7 +70,7 @@ function ApplicantCard() {
   };
 
   return (
-    <div className="applicant-card-container">
+    <motion.div className="applicant-card-container" initial={{width:0}} animate={{width:"100%"}} exit={{x:"100%"}}>
       {jobApplications.map((jobApplicant) => (
         <div className="card" key={jobApplicant.id}>
           <h2>{jobApplicant.name}</h2>
@@ -83,7 +84,7 @@ function ApplicantCard() {
           </button>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 }
 
