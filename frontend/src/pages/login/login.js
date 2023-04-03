@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./login.css";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import app from "../../firebase";
+import { animate, motion } from "framer-motion";
 
 const Login = () => {
   const auth = getAuth(app);
@@ -26,7 +27,7 @@ const Login = () => {
   };
 
   return (
-    <div className="bg">
+    <motion.div className="bg" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
       <form className="form1" onSubmit={signIn}>
         <h1 className="h1login">LogIn to Hire Vision</h1>
         <div>
@@ -54,7 +55,7 @@ const Login = () => {
           Log-In
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

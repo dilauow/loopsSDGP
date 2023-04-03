@@ -8,21 +8,12 @@ import Signup from "./pages/Signup/Signup";
 import Aboutus from "./pages/Aboutus/Aboutus";
 import Tos from "./pages/TermsOfServices/termsofservice" 
 import Ppage from "./pages/PrivacyPolicy/privacypolicy"
+import AnimatedRoutes from "./AnimatedRoutes";
 
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Frontpage />} />
-        <Route path="/loginpage" element={<Loginpage />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/formpage" element={<Form />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/preview" element={<Previewpage />} />
-        <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/tos" element={<Tos/>} />
-        <Route path="/prs" element={<Ppage/>} />
-      </Routes>
+        <AnimatedRoutes/>
     </div>
   );
 }

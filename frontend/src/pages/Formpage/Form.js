@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Form.css";
 import { createApplication } from "../../apiController";
+import { animate, motion } from "framer-motion";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -50,7 +51,7 @@ function Form() {
   };
 
   return (
-    <div className="formfill">
+    <motion.div className="formfill" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
       <div className="formdiv">
         <h1 className="h1form">APPLY FOR A JOB !</h1>
         <form onSubmit={handleSubmit}>
@@ -132,7 +133,7 @@ function Form() {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

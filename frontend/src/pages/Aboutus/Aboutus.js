@@ -5,11 +5,12 @@ import member1 from '../../images/member1.jpeg';
 import member5 from '../../images/member5.jpeg';
 import member2 from '../../images/member2.jpeg';
 import member3 from '../../images/member3.jpeg';
+import { animate, motion } from "framer-motion";
 
 
 function AboutUs() {
   return (
-    <div className="container">
+    <motion.div className="container" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
       <h1>ABOUT US</h1>
       <div className="team">
         <div className="member">
@@ -71,7 +72,7 @@ function AboutUs() {
             </div>
         </div>
           </div>
-      </div>
+      </motion.div>
   )   
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from "../../components/Navigation/NavBar";
 import "./frontpage.css";
 import { useNavigate } from 'react-router-dom';
+import { animate, motion } from "framer-motion";
 
 export default function Frontpage() {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ export default function Frontpage() {
 
   return (
     <>
-    <div className='frontface'>
+    <motion.div className='frontface' initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
       <body className='banner1'>
         <div className='content1'>
           <h1>WELCOME TO HIREVISION</h1>
@@ -26,7 +27,7 @@ export default function Frontpage() {
           </div>
         </div>
       </body>
-    </div>
+    </motion.div>
     </>
   )
 }
