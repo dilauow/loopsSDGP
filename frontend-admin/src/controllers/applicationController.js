@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://fastapi-production-8423.up.railway.app/api",
+  baseURL: "https://fastapi-production-33be.up.railway.app/api",
 });
 
 const headers = {
@@ -22,7 +22,7 @@ export const getJobs = async () =>{
 
   export const createJob = async (job) => {
     try {
-        const res = await api.post("/jobs", job,headers);
+        const res = await api.post("/jobs", job);
         return res.data;
     } catch (error) {
         console.error(error);   
