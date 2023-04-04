@@ -1,5 +1,5 @@
 .navBarBox{
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: #b39afd;
     display: flex;
@@ -14,11 +14,11 @@
 }
 
 .navBarLeft{
-    flex: 2;
+    flex: 4;
 }
 
 .navBarCenter{
-    flex: 9;
+    flex: 8;
 }
 
 .navBarRight{

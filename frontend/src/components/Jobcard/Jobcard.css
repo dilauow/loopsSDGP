@@ -2,8 +2,8 @@
 
 /* * */
 .job-card {
-  margin: 5px;
-  margin-bottom: 20px;
+  margin: 40px;
+  margin-bottom: 40px;
   border: rgb(189,189,189) solid;
 }
 
@@ -40,13 +40,13 @@
   background: #eee6ff;
   padding-top: 0px;
   padding-left: 40px;
-  padding-right: 120px;
+  padding-right: 80px;
   border-radius: 20px;
 }
 /* * */
 .job-card-title-company-name h3 {
   padding-top: 0px;
-  font-family: Candara;
+  font-family: Nunito Sans;
   padding-bottom: 20px;
 }
 
@@ -61,14 +61,15 @@
   display: flex;
   flex-direction: column;
   margin-left: 490px;
+  margin-top: 41px;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-family: Candara;
   border-radius: 10px;
   border: none;
   color: #fff;
   background: #8f6bfc;
-   background-origin: border-box;
+  background-origin: border-box;
   box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
   user-select: none;
   -webkit-user-select: none;
@@ -82,10 +83,9 @@
 }
 
 .job-card-title-company-name h2{
-  font-family: Candara;
-  padding-top: 0px;
+  font-family: Nunito Sans;
 }
 
 .job-card-second-row h3{
-  font-family: Candara;
+  font-family: Nunito Sans;
 }

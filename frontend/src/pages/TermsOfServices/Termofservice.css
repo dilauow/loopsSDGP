@@ -35,7 +35,11 @@ h2 {
 }
 
 p {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin-right: 210px;
+  margin-left: 210px;
   line-height: 1.5;
   font-family: Candara;
 }
