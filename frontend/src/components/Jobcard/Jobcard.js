@@ -11,12 +11,11 @@ import { getJobs } from "../../apiController";
 import { useState } from "react";
 
 function Jobcard() {
-  const getDBJobs  = async ()=>{
-    const temp = await getJobs()
+  const getDBJobs = async () => {
+    const temp = await getJobs();
     console.log(temp);
-    return temp
-   }
-   
+    return temp;
+  };
 
   let data = [
     {
@@ -55,20 +54,16 @@ function Jobcard() {
 
    }, []); */
 
-   
-   const [jobs, setJobs ] = useState([])
+  const [jobs, setJobs] = useState([]);
 
-  
-
-  useEffect (()=>{
+  useEffect(() => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    getDBJobs().then((jb)=>{
-      setJobs(jb)
-    })
-  
-    // setJobs(newJobs)
+    getDBJobs().then((jb) => {
+      setJobs(jb);
+    });
 
-  },[])
+    // setJobs(newJobs)
+  }, []);
 
   console.log(jobs);
 
@@ -76,7 +71,7 @@ function Jobcard() {
 
   function handleClick(jobtitle) {
     console.log(jobtitle);
-    navigate("/formpage");
+    navigate("/formpage", { state: jobtitle });
   }
 
   const navigate2 = useNavigate();
@@ -85,63 +80,57 @@ function Jobcard() {
     navigate2("/preview");
   }
 
-    return (
-      <div>
-        {jobs.map((jobs) => (
-          <div className="job-card" key={jobs.id}>
-            <div className="job-card-first-row">
-              <div className="job-card-first-col">
-                {/* <div className="job-card-icon">ICON</div> */}
-                <div className="job-card-title-company-name">
-                  <h2>{jobs.jobrole}</h2>
-                  <h3>
-                    Surge Global
-                    <MdOutlineVerified className="h-icons" />
-                  </h3>
-                </div>
+  return (
+    <div>
+      {jobs.map((jobs) => (
+        <div className="job-card" key={jobs.id}>
+          <div className="job-card-first-row">
+            <div className="job-card-first-col">
+              {/* <div className="job-card-icon">ICON</div> */}
+              <div className="job-card-title-company-name">
+                <h2>{jobs.jobrole}</h2>
+                <h3>
+                  Surge Global
+                  <MdOutlineVerified className="h-icons" />
+                </h3>
               </div>
-              <div className="job-card-second-col">
-                {/* <Button
+            </div>
+            <div className="job-card-second-col">
+              {/* <Button
                   onClick={handleClick}
                   type={BUTTON_TYPES.PRIMARY}
                   btnText="Apply"
                 /> */}
-                <button
-                  className="primaryBtn"
-                  onClick={() => handleClick(jobs.jobrole)}
-                >
-                  APPLY
-                </button>
-              </div>
-            </div>
-            <div className="job-card-second-row">
-              <h3>
-                <MdOutlineWorkOutline className="h-icons" />
-                {jobs.fullorparttime}
-              </h3>
-              <h3>
-                <HiOutlineComputerDesktop className="h-icons" />
-                {jobs.worktype}
-              </h3>
-              <h3>
-                <TfiLocationPin className="h-icons" />
-                {jobs.location}
-              </h3>
-              <h3>
-                <AiOutlineDollarCircle className="h-icons" />
-                LKR {jobs.salary}
-              </h3>
+              <button
+                className="primaryBtn"
+                onClick={() => handleClick(jobs.jobrole)}
+              >
+                APPLY
+              </button>
             </div>
           </div>
-        ))
-        
-        }
-      </div>
-    );
-
-
-
-  
+          <div className="job-card-second-row">
+            <h3>
+              <MdOutlineWorkOutline className="h-icons" />
+              {jobs.fullorparttime}
+            </h3>
+            <h3>
+              <HiOutlineComputerDesktop className="h-icons" />
+              {jobs.worktype}
+            </h3>
+            <h3>
+              <TfiLocationPin className="h-icons" />
+              {jobs.location}
+            </h3>
+            <h3>
+              <AiOutlineDollarCircle className="h-icons" />
+              LKR {jobs.salary}
+            </h3>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default Jobcard;

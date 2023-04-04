@@ -2,10 +2,15 @@ import React, { useState } from "react";
 import "./Form.css";
 import { createApplication } from "../../apiController";
 import { animate, motion } from "framer-motion";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Form() {
+  const location = useLocation();
+
+  const formJobPosition = location.state;
+
   const [formData, setFormData] = useState({
-    id:0,
+    id: 0,
     fullname: "",
     email: "",
     address: "",
@@ -51,7 +56,12 @@ function Form() {
   };
 
   return (
-    <motion.div className="formfill" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
+    <motion.div
+      className="formfill"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="formdiv">
         <h1 className="h1form">APPLY FOR A JOB !</h1>
         <form onSubmit={handleSubmit}>
@@ -80,7 +90,9 @@ function Form() {
               value={formData.address || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">Job Position :</label>
+            <label className="labelsform">
+              Job Position : <span>{formJobPosition}</span>
+            </label>
             <input
               className="textareaform1"
               type="text"
@@ -90,35 +102,52 @@ function Form() {
             />
           </div>
           <div className="ques-div color">
-            <label className="labelsform">1 : How do you stay open-minded when dealing with people from different backgrounds or cultures than your own ? </label>
+            <label className="labelsform">
+              1 : How do you stay open-minded when dealing with people from
+              different backgrounds or cultures than your own ?{" "}
+            </label>
             <textarea
               className="textareaform"
               name="question1"
               value={formData.question1 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">2 : How do you typically plan and organize your work? Can you give an example of how this has helped you achieve a specific goal ?</label>
+            <label className="labelsform">
+              2 : How do you typically plan and organize your work? Can you give
+              an example of how this has helped you achieve a specific goal ?
+            </label>
             <textarea
               className="textareaform"
               name="question2"
               value={formData.question2 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">3 : Can you tell me about a time when you had to work in a team? How did you contribute to the team's success?</label>
+            <label className="labelsform">
+              3 : Can you tell me about a time when you had to work in a team?
+              How did you contribute to the team's success?
+            </label>
             <textarea
               className="textareaform"
               name="question3"
               value={formData.question3 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">4 : If you are supposed to work on a project that's out of your comfortable zone. Would you adapt or not. Give reasons for yes or no</label>
+            <label className="labelsform">
+              4 : If you are supposed to work on a project that's out of your
+              comfortable zone. Would you adapt or not. Give reasons for yes or
+              no
+            </label>
             <textarea
               className="textareaform"
               name="question4"
               value={formData.question4 || ""}
               onChange={handleChange}
             />
-            <label className="labelsform">5 : Tell me about a time when you had to work with someone who had a very different personality or work style than your own. How did you handle the situation ?</label>
+            <label className="labelsform">
+              5 : Tell me about a time when you had to work with someone who had
+              a very different personality or work style than your own. How did
+              you handle the situation ?
+            </label>
             <textarea
               className="textareaform"
               name="question5"
