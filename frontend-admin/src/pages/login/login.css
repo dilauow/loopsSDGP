@@ -9,6 +9,7 @@
 }
 
 .bg {
+  background-color: white;
   background-image: url(../login/signupbg.jpeg);
   display: flex;
   background-size: 100vw 100vh;

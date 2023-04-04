@@ -62,7 +62,7 @@ const Login = () => {
           Log-In
         </button>
         <button className="buttonhome" type="submit" onClick={handleclick}>
-          BACK-TO-HOME
+          HOME
         </button>
       </form>
     </motion.div>

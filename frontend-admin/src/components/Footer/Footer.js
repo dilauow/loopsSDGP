@@ -21,6 +21,10 @@ function Footer() {
       navigate("/privacy")
     }
 
+    function handleclick5(){
+      navigate("/jobpostpage")
+    }
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -31,7 +35,7 @@ function Footer() {
           <div className='list'>
             <ul className="footer-links-column">
               <li onClick={handleclick}>Home</li>
-              <li>Post a Job</li>
+              <li onClick={handleclick5}>Post a Job</li>
             </ul>
           </div>
           <div className='list'>
