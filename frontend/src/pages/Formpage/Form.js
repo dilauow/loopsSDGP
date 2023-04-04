@@ -45,7 +45,7 @@ function Form() {
       id: Math.floor(Math.random() * 10000),
       name: formData.fullname,
       address: formData.address,
-      position: formData.position,
+      position: formJobPosition,
       cv: formData.cv,
       answers: fullAnswer,
       prediction: [0],
@@ -97,7 +97,8 @@ function Form() {
               className="textareaform1"
               type="text"
               name="jobposition"
-              value={formData.position || ""}
+              // value={formData.position || ""}
+              value={formJobPosition}
               onChange={handleChange}
             />
           </div>
