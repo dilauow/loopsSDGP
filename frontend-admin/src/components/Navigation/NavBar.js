@@ -35,14 +35,14 @@ export default function NavBar() {
       <div className="navBarCenter"></div>
       <div className="navBarRight">
         <div className="navBarLinks">
-          <Stack spacing={3} className="buttons">
-            <Button className="bt2" variant="Candidate" onClick={handleclick}>
-              Sign-in
-            </Button>
-          </Stack>
+          <Button className="bt2" variant="Candidate" onClick={handleclick}>
+            Sign-in
+          </Button>
           <Button className="bt2" variant="Candidate" onClick={handleclick3}>
             POST A JOB
           </Button>
+          <Stack spacing={3} className="buttons">
+          </Stack>
         </div>
       </div>
     </div>

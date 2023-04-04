@@ -16,7 +16,9 @@ function Home() {
     <motion.div className="homebg" initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}}>
       <NavBar/>
       <div className="main-div">
+        <span>
         <h1 className="head1">JOB APPLICANTS</h1>
+        </span>
       <div className="jobs-container">
         <ApplicantCard />
       </div>

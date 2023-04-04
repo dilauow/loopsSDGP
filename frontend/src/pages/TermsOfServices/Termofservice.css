@@ -25,15 +25,18 @@ main {
   margin-top: 50px;
   text-align: left;
   padding-bottom: 50px;
+  font-family: Candara;
 }
 
 h2 {
   text-align: center;
   margin-top: 30px;
+  font-family: Candara;
 }
 
 p {
   text-align: center;
   line-height: 1.5;
+  font-family: Candara;
 }
 

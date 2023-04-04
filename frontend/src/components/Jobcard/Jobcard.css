@@ -11,7 +11,8 @@
 .job-card-first-row {
   background: #d2c2fd;
   margin: 5px;
-  padding: 10px;
+  padding: 3px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-around;
   border-radius: 20px;
@@ -39,16 +40,19 @@
   background: #eee6ff;
   padding-top: 0px;
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 120px;
+  border-radius: 20px;
 }
 /* * */
 .job-card-title-company-name h3 {
-  padding-top: 12px;
+  padding-top: 0px;
   font-family: Candara;
+  padding-bottom: 20px;
 }
 
 /* * */
 .h-icons {
+  padding-top: 5px;
   margin-right: 5px;
   margin-left: 5px;
 }
@@ -56,10 +60,11 @@
 .primaryBtn {
   display: flex;
   flex-direction: column;
+  margin-left: 490px;
   align-items: center;
-  padding: 6px 14px;
+  padding: 10px 20px;
   font-family: Candara;
-  border-radius: 6px;
+  border-radius: 10px;
   border: none;
   color: #fff;
   background: #8f6bfc;
@@ -71,8 +76,16 @@
 }
 
 .primaryBtn:hover {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  color: #fff;
+  /* box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5); */
   outline: 0;
 }
 
-h2{font-family: Candara;}
+.job-card-title-company-name h2{
+  font-family: Candara;
+  padding-top: 0px;
+}
+
+.job-card-second-row h3{
+  font-family: Candara;
+}

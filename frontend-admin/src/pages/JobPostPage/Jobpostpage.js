@@ -37,7 +37,9 @@ function Jobpostpage() {
       exit={{ opacity: 0 }}
     >
       <div className="formdiv">
-        <h1 className="h1form">POST A JOB !</h1>
+        <span>
+          <h1 className="h1form">POST A JOB</h1>
+        </span>
         <form onSubmit={handleSubmit}>
           <div className="details-div color">
             <label className="labelsform"> Job Role :</label>
@@ -76,14 +78,14 @@ function Jobpostpage() {
           </div>
           <div className="ques-div color">
             <label className="labelsform">Full or Part time :</label>
-            <textarea
+            <input
               className="textareaform"
               name="fullorparttime"
               value={postJobData.fullorparttime || ""}
               onChange={handleChange}
             />
             <label className="labelsform">Salary :</label>
-            <textarea
+            <input
               className="textareaform"
               name="salary"
               value={postJobData.salary || ""}

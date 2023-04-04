@@ -63,7 +63,7 @@ function Form() {
       exit={{ opacity: 0 }}
     >
       <div className="formdiv">
-        <h1 className="h1form">APPLY FOR A JOB !</h1>
+        <h1 className="h1form">APPLY FOR A JOB</h1>
         <form onSubmit={handleSubmit}>
           <div className="details-div color">
             <label className="labelsform"> Full Name :</label>
