@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Jobpostpage.css";
 import { animate, motion } from "framer-motion";
+import { createJob } from "../../controllers/applicationController";
 
 function Jobpostpage() {
   const [postJobData, setPostJobData] = useState({
@@ -13,7 +14,7 @@ function Jobpostpage() {
   });
 
   const handleChange = (event) => {
-    setPostJobData({ ...Jobpostpage, [event.target.name]: event.target.value });
+    setPostJobData({ ...postJobData, [event.target.name]: event.target.value });
   };
 
   const handleSubmit = async (event) => {
@@ -28,6 +29,8 @@ function Jobpostpage() {
     };
 
     console.log(PostSendDataModel);
+
+    await createJob(PostSendDataModel);
   };
   return (
     <motion.div
