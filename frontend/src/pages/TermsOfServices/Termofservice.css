@@ -17,7 +17,7 @@
   color: white;
 }
 
-h1 {
+.Apps h1 {
   margin-top: 4;
 }
 
@@ -28,13 +28,13 @@ main {
   font-family: Candara;
 }
 
-h2 {
+.Apps h2 {
   text-align: center;
   margin-top: 30px;
   font-family: Candara;
 }
 
-p {
+.Apps p {
   display: flex;
   flex-direction: column;
   text-align: center;

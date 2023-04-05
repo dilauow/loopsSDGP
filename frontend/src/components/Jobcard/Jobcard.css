@@ -4,7 +4,7 @@
 .job-card {
   margin: 40px;
   margin-bottom: 40px;
-  border: rgb(189,189,189) solid;
+  border: none;
 }
 
 /* * */
@@ -15,7 +15,7 @@
   padding-top: 5px;
   display: flex;
   justify-content: space-around;
-  border-radius: 20px;
+  border-radius: 7px;
 }
 /* * */
 .job-card-second-row {
@@ -24,7 +24,7 @@
   padding: 10px;
   display: flex;
   justify-content: space-around;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 /* * */
 .job-card-first-col {
@@ -38,16 +38,17 @@
 /* * */
 .job-card-title-company-name {
   background: #eee6ff;
-  padding-top: 0px;
+  margin: 15px;
+  padding-top: 13px;
   padding-left: 40px;
-  padding-right: 80px;
-  border-radius: 20px;
+  padding-right: 40px;
+  border-radius: 10px;
 }
 /* * */
 .job-card-title-company-name h3 {
   padding-top: 0px;
   font-family: Nunito Sans;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 /* * */
@@ -70,7 +71,8 @@
   color: #fff;
   background: #8f6bfc;
   background-origin: border-box;
-  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25),
+    inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -82,10 +84,10 @@
   outline: 0;
 }
 
-.job-card-title-company-name h2{
+.job-card-title-company-name h2 {
   font-family: Nunito Sans;
 }
 
-.job-card-second-row h3{
+.job-card-second-row h3 {
   font-family: Nunito Sans;
 }
