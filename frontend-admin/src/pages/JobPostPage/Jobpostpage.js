@@ -31,6 +31,8 @@ function Jobpostpage() {
     console.log(PostSendDataModel);
 
     await createJob(PostSendDataModel);
+
+    window.alert("JOB POSTED.");
   };
   return (
     <motion.div

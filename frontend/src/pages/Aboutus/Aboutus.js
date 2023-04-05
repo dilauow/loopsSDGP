@@ -20,7 +20,7 @@ function AboutUs() {
                 <h2>Member 1</h2>
                 
                 <p>Student name - Dilshara Hettiarachchige</p>
-                <p>Student Id number - 20200730</p>
+                <p>Student Id number - 20210305</p>
               </div>
             </div>
         </div>
@@ -31,7 +31,7 @@ function AboutUs() {
                 <h2>Member 2</h2>
                 
                 <p>Student name - Sithum Wikramanayaka</p>
-                <p>Student Id number - 20200730</p>
+                <p>Student Id number - 20210799</p>
               </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ function AboutUs() {
                 <h2>Member 4</h2>
                 
                 <p>Student name - Thilini Abeywikrama</p>
-                <p>Student Id number - 20200730</p>
+                <p>Student Id number - 20200476</p>
               </div>
             </div>
         </div>
@@ -67,7 +67,7 @@ function AboutUs() {
                 <h2>Member 5</h2>
                 
                 <p>Student name - Sahasri Kaluthota</p>
-                <p>Student Id number - 20200730</p>
+                <p>Student Id number - 20210523</p>
               </div>
             </div>
         </div>
