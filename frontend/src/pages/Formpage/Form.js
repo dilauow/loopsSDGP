@@ -53,6 +53,8 @@ function Form() {
     console.log(FormSendDataModel);
 
     await createApplication(FormSendDataModel);
+
+    window.alert("FORM SUBMITTED.");
   };
 
   return (

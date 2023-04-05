@@ -23,7 +23,7 @@ function ApplicantResultCard() {
         <h2 className="applicant-prediction">FULL NAME : {applicant.name}</h2>
         <h2 className="applicant-prediction" >JOB POSITION : {applicant.position}</h2>
         <h2 className="applicant-prediction">ANSWER </h2>
-        <h2 className="applicant-prediction">{applicant.answers}</h2>
+        <h2 className="applicant-predictionAnswer">{applicant.answers}</h2>
         <h2 className="applicant-prediction-PT">PERSONALITY TRAITS</h2>
         <div className="prediction-list">
           <div className="prediction-item">
